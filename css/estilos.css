@@ -1,0 +1,30 @@
+/* Colores del proyecto */
+
+:root {
+    --color-principal: #b01818;
+    --color-secundario: #f4e2ca;
+    --color-complementario: #747343;
+    --color-fondo: #fffaf3;
+    --color-texto: #3d2925;
+}
+
+
+/* Estilos generales */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
