@@ -28,3 +28,88 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Encabezado */
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: var(--color-secundario);
+}
+
+.logo img {
+    width: 180px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: var(--color-complementario);
+}
+
+
+/* Sección principal */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 500px;
+    padding: 50px 8%;
+    gap: 40px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+.hero-texto h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-imagen img {
+    width: 450px;
+    border-radius: 15px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.boton:hover {
+    background-color: var(--color-complementario);
+}
