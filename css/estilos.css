@@ -207,3 +207,74 @@ img {
 .taller:hover {
     transform: translateY(-5px);
 }
+
+/* Servicios y beneficios */
+
+.servicios {
+    padding: 60px 8%;
+    background-color: var(--color-secundario);
+    text-align: center;
+}
+
+.servicios h2 {
+    color: var(--color-principal);
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.servicios-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servicio {
+    width: 280px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid var(--color-principal);
+}
+
+.servicio h3 {
+    color: var(--color-principal);
+    font-size: 22px;
+}
+
+.servicio p {
+    line-height: 1.6;
+}
+
+/* Tabla */
+
+.tabla-talleres {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.tabla-talleres h2 {
+    color: var(--color-principal);
+    font-size: 36px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th,
+td {
+    border: 1px solid var(--color-principal);
+    padding: 15px;
+}
+
+th {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+td {
+    background-color: white;
+}
