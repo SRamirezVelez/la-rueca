@@ -384,3 +384,118 @@ td {
 .pie-pagina a:hover {
     text-decoration: underline;
 }
+
+/* Diseño responsive */
+
+@media (max-width: 768px) {
+
+    /* Encabezado */
+
+    .encabezado {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-texto h1 {
+        font-size: 36px;
+    }
+
+    .hero-texto h2 {
+        font-size: 22px;
+    }
+
+    .hero-imagen img {
+        width: 100%;
+    }
+
+
+    /* Nosotros */
+
+    .nosotros {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .nosotros-imagen img {
+        width: 100%;
+    }
+
+
+    /* Talleres */
+
+    .talleres {
+        padding: 40px 5%;
+    }
+
+    .taller {
+        width: 100%;
+    }
+
+
+    /* Servicios */
+
+    .servicios {
+        padding: 40px 5%;
+    }
+
+    .servicio {
+        width: 100%;
+    }
+
+
+    /* Tabla */
+
+    .tabla-talleres {
+        padding: 40px 5%;
+        overflow-x: auto;
+    }
+
+
+    /* Galería */
+
+    .galeria {
+        padding: 40px 5%;
+    }
+
+    .galeria-contenedor img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Contacto */
+
+    .contacto {
+        padding: 40px 5%;
+    }
+
+    .contacto input,
+    .contacto select,
+    .contacto textarea {
+        box-sizing: border-box;
+    }
+
+
+    /* Footer */
+
+    .pie-pagina {
+        flex-direction: column;
+        text-align: center;
+    }
+}
