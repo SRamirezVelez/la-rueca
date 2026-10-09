@@ -113,3 +113,97 @@ img {
 .boton:hover {
     background-color: var(--color-complementario);
 }
+
+/* Sección nosotros */
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: var(--color-secundario);
+}
+
+.nosotros-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.nosotros-imagen img {
+    width: 400px;
+}
+
+.nosotros-texto {
+    flex: 1;
+}
+
+.nosotros-texto h2 {
+    color: var(--color-principal);
+    font-size: 36px;
+}
+
+.nosotros-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Sección talleres */
+
+.talleres {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: var(--color-fondo);
+}
+
+.talleres h2 {
+    color: var(--color-principal);
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.talleres-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.taller {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid var(--color-secundario);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+.taller img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.taller h3 {
+    color: var(--color-principal);
+    font-size: 23px;
+    margin-top: 18px;
+}
+
+.taller p {
+    line-height: 1.5;
+}
+
+.informacion {
+    font-weight: bold;
+    color: var(--color-complementario);
+}
+
+.taller .boton {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.taller:hover {
+    transform: translateY(-5px);
+}
