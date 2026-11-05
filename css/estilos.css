@@ -1,6 +1,5 @@
-
 /* =====================================
-   LA RUECA - DISEÑO MEDICLOUD + TIYA
+   LA RUECA
 ===================================== */
 
 :root {
@@ -161,7 +160,7 @@ a { text-decoration: none; }
 }
 
 .hero h2 {
-  color: var(--oliva);
+  color: #8f1d2c;
   font-family: 'DM Sans', sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -185,6 +184,8 @@ a { text-decoration: none; }
   box-shadow: var(--sombra);
 }
 
+/* Sello flotante elegante */
+
 .sello-flotante {
   position: absolute;
   bottom: 25px;
@@ -192,24 +193,35 @@ a { text-decoration: none; }
   background: white;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   border-radius: 18px;
-  padding: 18px 24px;
-  box-shadow: var(--sombra);
+  padding: 14px 22px;
+  box-shadow: 0 10px 30px rgba(61, 41, 37, 0.12);
 }
 
-.sello-flotante > span {
-  color: var(--rojo);
-  font-size: 38px;
+/* Aguja original de La Rueca */
+
+.sello-flotante .aguja-logo {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
-.sello-flotante strong,
+/* Textos */
+
+.sello-flotante strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3d2925;
+}
+
 .sello-flotante small {
   display: block;
-}
-
-.sello-flotante small {
+  font-size: 12px;
   color: #887b70;
+  margin-top: 2px;
 }
 
 /* NOSOTROS */
@@ -417,27 +429,6 @@ a { text-decoration: none; }
 .sin-eventos h3 { font-size: 30px; }
 .sin-eventos p { color: #786c62; }
 
-/* GALERÍA */
-
-.galeria-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.galeria-grid img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 20px;
-  transition: .35s ease;
-}
-
-.galeria-grid img:hover {
-  transform: scale(1.025);
-  filter: saturate(1.12);
-}
-
 /* CONTACTO */
 
 .detalle-contacto {
@@ -575,19 +566,7 @@ a { text-decoration: none; }
   .evento-boton {
     grid-column: 1 / -1;
   }
-
-  .galeria-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .galeria-grid img { height: 180px; }
-
   .tarjeta-contacto { padding: 25px; }
-}
-
-@media (max-width: 480px) {
-  .galeria-grid { grid-template-columns: 1fr; }
-  .galeria-grid img { height: 250px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -595,4 +574,138 @@ a { text-decoration: none; }
     scroll-behavior: auto !important;
     transition-duration: .01ms !important;
   }
+}
+
+/* ==========================================
+   GALERÍA PREMIUM - LA RUECA
+   Imagen central y fotos laterales visibles
+========================================== */
+
+.galeria-premium {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.galeria-premium .galeria-swiper {
+  width: 100%;
+  overflow: hidden;
+  padding: 24px 0 40px;
+}
+
+.galeria-premium .galeria-swiper .swiper-slide {
+  height: 390px;
+  background: #f4e2ca;
+  border-radius: 24px;
+  overflow: hidden;
+  opacity: .55;
+  transform: scale(.88);
+  transition: transform .55s ease, opacity .55s ease, box-shadow .55s ease;
+}
+
+.galeria-premium .galeria-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galeria-premium .galeria-swiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 15px 36px rgba(61,41,37,.15);
+}
+
+.galeria-premium .galeria-swiper .swiper-slide-prev,
+.galeria-premium .galeria-swiper .swiper-slide-next {
+  opacity: .7;
+}
+
+.galeria-premium .galeria-controles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.galeria-premium .galeria-anterior,
+.galeria-premium .galeria-siguiente {
+  appearance: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  flex-shrink: 0;
+  border: 1px solid #eadfd4;
+  border-radius: 50%;
+  background: #fff;
+  color: #b01818;
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 5px 18px rgba(61,41,37,.08);
+  transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+
+.galeria-premium .galeria-anterior:hover,
+.galeria-premium .galeria-siguiente:hover {
+  color: #fff;
+  background: #b01818;
+  transform: translateY(-2px);
+}
+
+.galeria-premium .galeria-anterior:focus-visible,
+.galeria-premium .galeria-siguiente:focus-visible {
+  outline: 3px solid #b01818;
+  outline-offset: 3px;
+}
+
+.galeria-premium .galeria-paginacion {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: auto !important;
+  margin: 0;
+}
+
+.galeria-premium .galeria-paginacion .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 !important;
+  border-radius: 50%;
+  background: #b01818;
+  opacity: .3;
+  transition: width .3s ease, opacity .3s ease;
+}
+
+.galeria-premium .galeria-paginacion .swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .galeria-premium .galeria-swiper .swiper-slide { height: 330px; }
+}
+
+@media (max-width: 576px) {
+  .galeria-premium .galeria-swiper .swiper-slide {
+    height: 275px;
+    border-radius: 18px;
+  }
+  .galeria-premium .galeria-swiper { padding: 16px 0 26px; }
+  .galeria-premium .galeria-controles { gap: 14px; }
+  .galeria-premium .galeria-anterior,
+  .galeria-premium .galeria-siguiente { width: 42px; height: 42px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .galeria-premium .galeria-swiper .swiper-slide { transition: none; }
 }

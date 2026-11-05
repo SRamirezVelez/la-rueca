@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,6 +13,9 @@
   rel="stylesheet"
 >
 
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 <!-- Tipografías -->
 <link
   href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
@@ -21,7 +23,7 @@
 >
 
 <!-- Tu diseño nuevo -->
-<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/estilos.css?v=4">
 </head>
 
 <body>
@@ -77,11 +79,16 @@
             <div class="hero-foto">
               <img src="img/hero-bordado.png"
                 alt="Experiencia de bordado artesanal">
-              <div class="sello-flotante">
-                <span>✿</span>
+                <div class="sello-flotante">
+                <img
+                src="img/aguja-la-rueca.png"
+                alt="Aguja de La Rueca"
+                class="aguja-logo"
+                >
+
                 <div>
-                  <strong>Hecho con amor</strong>
-                  <small>Experiencias creativas</small>
+                <strong>Hecho con amor</strong>
+                <small>Experiencias creativas</small>
                 </div>
               </div>
             </div>
@@ -310,15 +317,26 @@
           </p>
         </div>
 
-        <div class="galeria-grid">
-          <img src="img/galeria-1.png" alt="Bordado floral">
-          <img src="img/galeria-2.png" alt="Proceso de bordado">
-          <img src="img/galeria-3.png" alt="Taller grupal">
-          <img src="img/galeria-4.png" alt="Prenda bordada">
-          <img src="img/galeria-5.png" alt="Experiencia creativa">
-          <img src="img/galeria-6.png" alt="Bordado artesanal">
-        </div>
 
+<!-- GALERÍA PREMIUM LA RUECA -->
+        <div class="galeria-premium">
+          <div class="swiper galeria-swiper" aria-label="Galería de fotografías de La Rueca">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/galeria-1.png" alt="Creaciones de bordado artesanal" loading="lazy"></div>
+              <div class="swiper-slide"><img src="img/galeria-2.png" alt="Aprendiendo a bordar en La Rueca" loading="lazy"></div>
+              <div class="swiper-slide"><img src="img/galeria-3.png" alt="Personalización de prendas" loading="lazy"></div>
+              <div class="swiper-slide"><img src="img/galeria-4.png" alt="Experiencia creativa grupal" loading="lazy"></div>
+              <div class="swiper-slide"><img src="img/galeria-5.png" alt="Detalle de bordado floral" loading="lazy"></div>
+              <div class="swiper-slide"><img src="img/galeria-6.png" alt="Taller de bordado La Rueca" loading="lazy"></div>
+            </div>
+          </div>
+
+          <div class="galeria-controles">
+            <button class="galeria-anterior" type="button" aria-label="Fotografía anterior">&#8592;</button>
+            <div class="galeria-paginacion"></div>
+            <button class="galeria-siguiente" type="button" aria-label="Fotografía siguiente">&#8594;</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -446,6 +464,49 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="jv/eventos.js"></script>
+
+  <!-- Swiper: cargar antes de inicializar -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (typeof Swiper === "undefined") {
+        console.error("Swiper no se cargó. Revisa la conexión a internet.");
+        return;
+      }
+
+      const reducido = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      new Swiper(".galeria-swiper", {
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 1.18,
+        spaceBetween: 12,
+        speed: reducido ? 0 : 650,
+        grabCursor: true,
+        autoplay: reducido ? false : {
+          delay: 4500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        },
+        navigation: {
+          prevEl: ".galeria-anterior",
+          nextEl: ".galeria-siguiente"
+        },
+        pagination: {
+          el: ".galeria-paginacion",
+          clickable: true
+        },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true
+        },
+        breakpoints: {
+          576: { slidesPerView: 1.35, spaceBetween: 18 },
+          768: { slidesPerView: 1.55, spaceBetween: 22 },
+          1100: { slidesPerView: 1.85, spaceBetween: 26 }
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
