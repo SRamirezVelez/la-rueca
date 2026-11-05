@@ -1,507 +1,598 @@
-/* Colores del proyecto */
+
+/* =====================================
+   LA RUECA - DISEÑO MEDICLOUD + TIYA
+===================================== */
 
 :root {
-    --color-principal: #b01818;
-    --color-secundario: #f4e2ca;
-    --color-complementario: #747343;
-    --color-fondo: #fffaf3;
-    --color-texto: #3d2925;
+  --rojo: #b01818;
+  --crema: #f4e2ca;
+  --oliva: #747343;
+  --fondo: #fffaf3;
+  --texto: #3d2925;
+  --blanco: #ffffff;
+  --borde: #eadfd4;
+  --sombra: 0 15px 45px rgba(61,41,37,.08);
 }
 
+* { box-sizing: border-box; }
 
-/* Estilos generales */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.75;
 }
 
-h1,
-h2,
-h3 {
-    font-family: Georgia, serif;
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Encabezado */
+a { text-decoration: none; }
 
-.encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 8%;
-    background-color: var(--color-secundario);
+.seccion { padding: 105px 0; }
+.fondo-crema { background: #f8eee3; }
+
+.etiqueta {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--oliva);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
 }
 
-.logo img {
-    width: 180px;
+.titulo-seccion {
+  color: var(--texto);
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.2;
+  margin-bottom: 25px;
 }
 
-.menu {
-    display: flex;
-    gap: 20px;
+.encabezado-seccion {
+  max-width: 700px;
+  margin: 0 auto 55px;
 }
 
-.menu a {
-    color: var(--color-principal);
-    text-decoration: none;
-    font-weight: bold;
+.encabezado-seccion p {
+  color: #74665c;
+  font-size: 17px;
 }
 
-.menu a:hover {
-    color: var(--color-complementario);
+/* MENÚ */
+
+.navbar {
+  background: rgba(255,250,243,.97);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 22px rgba(0,0,0,.05);
+  padding: 13px 0;
 }
 
+.logo { width: 145px; }
 
-/* Sección principal */
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 500px;
-    padding: 50px 8%;
-    gap: 40px;
+.navbar .nav-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--texto);
 }
 
-.hero-texto {
-    flex: 1;
+.navbar .nav-link:hover {
+  color: var(--rojo);
 }
 
-.hero-texto h1 {
-    font-size: 48px;
-    color: var(--color-principal);
-    margin-bottom: 10px;
+.navbar .btn-menu {
+  background: var(--rojo);
+  color: white;
+  border-radius: 50px;
+  padding: 10px 23px !important;
+  text-align: center;
 }
 
-.hero-texto h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
+.navbar .btn-menu:hover {
+  background: var(--oliva);
+  color: white;
 }
 
-.hero-texto p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.hero-imagen {
-    flex: 1;
-    text-align: center;
-}
-
-.hero-imagen img {
-    width: 450px;
-    border-radius: 15px;
-}
+/* BOTONES */
 
 .boton {
-    display: inline-block;
-    background-color: var(--color-principal);
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 8px;
+  display: inline-block;
+  border: none;
+  background: var(--rojo);
+  color: white;
+  font-weight: 700;
+  padding: 15px 29px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .3s ease;
 }
 
 .boton:hover {
-    background-color: var(--color-complementario);
+  background: var(--oliva);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: var(--sombra);
 }
 
-/* Sección nosotros */
-
-.nosotros {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    padding: 60px 8%;
-    background-color: var(--color-secundario);
+.boton-secundario {
+  display: inline-block;
+  border: 1px solid var(--rojo);
+  color: var(--rojo);
+  border-radius: 50px;
+  padding: 14px 28px;
+  font-weight: 700;
+  transition: .3s ease;
 }
 
-.nosotros-imagen {
-    flex: 1;
-    text-align: center;
+.boton-secundario:hover {
+  background: var(--rojo);
+  color: white;
 }
 
-.nosotros-imagen img {
-    width: 400px;
+/* PORTADA */
+
+.hero {
+  padding: 85px 0 100px;
+  min-height: 650px;
+  background: linear-gradient(125deg, #fffaf3, #f8e9d8);
+  overflow: hidden;
 }
 
-.nosotros-texto {
-    flex: 1;
+.hero h1 {
+  font-size: clamp(46px, 5.5vw, 76px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 23px;
 }
 
-.nosotros-texto h2 {
-    color: var(--color-principal);
-    font-size: 36px;
+.hero h1 em {
+  color: var(--rojo);
+  font-style: normal;
 }
 
-.nosotros-texto p {
-    font-size: 18px;
-    line-height: 1.6;
+.hero h2 {
+  color: var(--oliva);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 22px;
 }
 
-/* Sección talleres */
-
-.talleres {
-    padding: 60px 8%;
-    text-align: center;
-    background-color: var(--color-fondo);
+.hero .descripcion {
+  max-width: 540px;
+  font-size: 18px;
+  color: #6d5b53;
+  margin-bottom: 32px;
 }
 
-.talleres h2 {
-    color: var(--color-principal);
-    font-size: 36px;
-    margin-bottom: 35px;
+.hero-foto { position: relative; }
+
+.hero-foto > img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 40px 130px 40px 40px;
+  box-shadow: var(--sombra);
 }
 
-.talleres-contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.sello-flotante {
+  position: absolute;
+  bottom: 25px;
+  left: -25px;
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 18px;
+  padding: 18px 24px;
+  box-shadow: var(--sombra);
 }
 
-.taller {
-    width: 300px;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid var(--color-secundario);
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+.sello-flotante > span {
+  color: var(--rojo);
+  font-size: 38px;
 }
 
-.taller img {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
-    border-radius: 10px;
+.sello-flotante strong,
+.sello-flotante small {
+  display: block;
 }
 
-.taller h3 {
-    color: var(--color-principal);
-    font-size: 23px;
-    margin-top: 18px;
+.sello-flotante small {
+  color: #887b70;
 }
 
-.taller p {
-    line-height: 1.5;
+/* NOSOTROS */
+
+.nosotros { background: white; }
+
+.imagen-seccion img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: var(--sombra);
 }
 
-.informacion {
-    font-weight: bold;
-    color: var(--color-complementario);
+.nosotros p {
+  color: #6d5b53;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
 
-.taller .boton {
-    display: inline-block;
-    margin-top: 10px;
+/* SERVICIOS - MEDICLOUD */
+
+.tarjeta-servicio {
+  background: white;
+  padding: 42px 32px;
+  border-radius: 24px;
+  border: 1px solid var(--borde);
+  box-shadow: 0 6px 25px rgba(61,41,37,.035);
+  height: 100%;
+  transition: .3s ease;
 }
 
-.taller:hover {
-    transform: translateY(-5px);
+.tarjeta-servicio:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sombra);
 }
 
-/* Servicios y beneficios */
-
-.servicios {
-    padding: 60px 8%;
-    background-color: var(--color-secundario);
-    text-align: center;
+.icono-servicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 85px;
+  border-radius: 22px;
+  background: #f8eee3;
+  font-size: 39px;
+  margin-bottom: 28px;
 }
 
-.servicios h2 {
-    color: var(--color-principal);
-    font-size: 36px;
-    margin-bottom: 35px;
+.tarjeta-servicio h3 {
+  font-size: 27px;
+  margin-bottom: 18px;
+  color: var(--texto);
 }
 
-.servicios-contenedor {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+.tarjeta-servicio p {
+  color: #74665c;
+  margin: 0;
 }
 
-.servicio {
-    width: 280px;
-    padding: 25px;
-    background-color: white;
-    border-radius: 12px;
-    border: 1px solid var(--color-principal);
+/* TALLERES - TARJETAS */
+
+.tarjeta-taller {
+  overflow: hidden;
+  background: white;
+  border-radius: 22px;
+  border: 1px solid var(--borde);
+  height: 100%;
+  box-shadow: 0 7px 25px rgba(61,41,37,.06);
+  transition: .3s ease;
 }
 
-.icono {
-    display: block;
-    font-size: 40px;
-    margin-bottom: 10px;
+.tarjeta-taller:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--sombra);
 }
 
-.servicio h3 {
-    color: var(--color-principal);
-    font-size: 22px;
+.tarjeta-taller > img {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+  transition: transform .45s ease;
 }
 
-.servicio p {
-    line-height: 1.6;
+.tarjeta-taller:hover > img {
+  transform: scale(1.045);
 }
 
-/* Tabla */
+.tarjeta-cuerpo { padding: 27px; }
 
-.tabla-talleres {
-    padding: 60px 8%;
-    text-align: center;
+.tipo-taller {
+  color: var(--oliva);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
-.tabla-talleres h2 {
-    color: var(--color-principal);
-    font-size: 36px;
+.tarjeta-cuerpo h3 {
+  font-size: 25px;
+  line-height: 1.3;
+  margin-top: 12px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 30px;
+.tarjeta-cuerpo p {
+  color: #786c62;
+  min-height: 80px;
 }
 
-th,
-td {
-    border: 1px solid var(--color-principal);
-    padding: 15px;
+.tarjeta-cuerpo a {
+  color: var(--rojo);
+  font-weight: 700;
 }
 
-th {
-    background-color: var(--color-principal);
-    color: white;
+.tarjeta-cuerpo a:hover {
+  color: var(--oliva);
 }
 
-td {
-    background-color: white;
+/* UPCOMING EVENTS - TIYA */
+
+.eventos-contenedor {
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* Galería */
-
-.galeria {
-    padding: 60px 8%;
-    background-color: var(--color-secundario);
-    text-align: center;
+.evento {
+  display: grid;
+  grid-template-columns: 110px 170px 1fr auto;
+  align-items: center;
+  gap: 25px;
+  padding: 22px;
+  margin-bottom: 23px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 7px 25px rgba(61,41,37,.06);
+  border: 1px solid var(--borde);
+  transition: .3s ease;
 }
 
-.galeria h2 {
-    color: var(--color-principal);
-    font-size: 36px;
-    margin-bottom: 35px;
+.evento:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra);
 }
 
-.galeria-contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.evento-fecha {
+  background: var(--rojo);
+  color: white;
+  border-radius: 17px;
+  text-align: center;
+  padding: 15px 8px;
 }
 
-.galeria-contenedor img {
-    width: 300px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-/* Contacto */
-
-.contacto {
-    padding: 60px 8%;
-    text-align: center;
+.evento-dia {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.contacto h2 {
-    color: var(--color-principal);
-    font-size: 36px;
+.evento-mes {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.contacto p {
-    font-size: 18px;
-    margin-bottom: 30px;
+.evento-imagen {
+  width: 170px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
-.contacto form {
-    max-width: 600px;
-    margin: auto;
-    text-align: left;
+.evento-detalles h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
-.contacto label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-weight: bold;
+.evento-detalles p {
+  color: #786c62;
+  margin: 0;
+  font-size: 14px;
 }
 
-.contacto input,
-.contacto select,
-.contacto textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid var(--color-principal);
-    border-radius: 6px;
+.evento-etiqueta {
+  display: inline-block;
+  background: #f4e2ca;
+  color: var(--texto);
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  margin-bottom: 9px;
 }
 
-.contacto button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: var(--color-principal);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
+.evento-boton { white-space: nowrap; }
+
+.sin-eventos {
+  padding: 55px 30px;
+  border-radius: 22px;
+  text-align: center;
+  background: white;
+  border: 1px solid var(--borde);
 }
 
-.contacto button:hover {
-    background-color: var(--color-complementario);
+.sin-eventos h3 { font-size: 30px; }
+.sin-eventos p { color: #786c62; }
+
+/* GALERÍA */
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
-/* Pie de página */
+.galeria-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: .35s ease;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.025);
+  filter: saturate(1.12);
+}
+
+/* CONTACTO */
+
+.detalle-contacto {
+  display: flex;
+  flex-direction: column;
+  margin: 22px 0;
+  gap: 3px;
+}
+
+.detalle-contacto strong {
+  color: var(--rojo);
+}
+
+.detalle-contacto span,
+.detalle-contacto a {
+  color: #6d5b53;
+}
+
+.tarjeta-contacto {
+  padding: 42px;
+  background: white;
+  border-radius: 26px;
+  box-shadow: var(--sombra);
+}
+
+.tarjeta-contacto h3 {
+  font-size: 31px;
+  margin-bottom: 28px;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-control,
+.form-select {
+  padding: 13px;
+  border-radius: 10px;
+  border: 1px solid #ded2c6;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 3px rgba(116,115,67,.15);
+  border-color: var(--oliva);
+}
+
+/* PIE DE PÁGINA */
 
 .pie-pagina {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 40px 8%;
-    background-color: var(--color-principal);
-    color: white;
+  padding: 70px 0 24px;
+  background: var(--texto);
+  color: white;
 }
 
 .pie-pagina h3 {
-    font-size: 28px;
-    margin-top: 0;
+  font-size: 39px;
+}
+
+.pie-pagina h4 {
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+
+.pie-pagina p,
+.pie-pagina a {
+  color: #e8d9ce;
 }
 
 .pie-pagina a {
-    color: white;
-    text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .pie-pagina a:hover {
-    text-decoration: underline;
+  color: white;
 }
 
-/* Diseño responsive */
+.footer-inferior {
+  border-top: 1px solid rgba(255,255,255,.17);
+  margin-top: 45px;
+  padding-top: 24px;
+  text-align: center;
+  color: #e8d9ce;
+  font-size: 13px;
+}
 
-@media (max-width: 768px) {
+/* RESPONSIVE */
 
-    /* Encabezado */
+@media (max-width: 991px) {
+  .seccion { padding: 70px 0; }
+  .hero { padding: 65px 0; }
+  .hero-foto > img { height: 400px; }
+  .sello-flotante { left: 10px; }
 
-    .encabezado {
-        flex-direction: column;
-        gap: 15px;
-    }
+  .evento {
+    grid-template-columns: 95px 140px 1fr;
+  }
 
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+  .evento-imagen {
+    width: 140px;
+    height: 110px;
+  }
 
+  .evento-boton {
+    grid-column: 3;
+    justify-self: start;
+  }
+}
 
-    /* Hero */
+@media (max-width: 767px) {
+  .seccion { padding: 55px 0; }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-    }
+  .hero h1 { font-size: 45px; }
+  .hero-foto > img { height: 340px; }
 
-    .hero-texto h1 {
-        font-size: 36px;
-    }
+  .imagen-seccion img { height: 350px; }
 
-    .hero-texto h2 {
-        font-size: 22px;
-    }
+  .evento {
+    grid-template-columns: 85px 1fr;
+    gap: 15px;
+  }
 
-    .hero-imagen img {
-        width: 100%;
-    }
+  .evento-fecha {
+    align-self: start;
+  }
 
+  .evento-imagen {
+    width: 100%;
+    height: 155px;
+  }
 
-    /* Nosotros */
+  .evento-detalles,
+  .evento-boton {
+    grid-column: 1 / -1;
+  }
 
-    .nosotros {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-    }
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .nosotros-imagen img {
-        width: 100%;
-    }
+  .galeria-grid img { height: 180px; }
 
+  .tarjeta-contacto { padding: 25px; }
+}
 
-    /* Talleres */
+@media (max-width: 480px) {
+  .galeria-grid { grid-template-columns: 1fr; }
+  .galeria-grid img { height: 250px; }
+}
 
-    .talleres {
-        padding: 40px 5%;
-    }
-
-    .taller {
-        width: 100%;
-    }
-
-
-    /* Servicios */
-
-    .servicios {
-        padding: 40px 5%;
-    }
-
-    .servicio {
-        width: 100%;
-    }
-
-
-    /* Tabla */
-
-    .tabla-talleres {
-        padding: 40px 5%;
-        overflow-x: auto;
-    }
-
-
-    /* Galería */
-
-    .galeria {
-        padding: 40px 5%;
-    }
-
-    .galeria-contenedor img {
-        width: 100%;
-        height: auto;
-    }
-
-
-    /* Contacto */
-
-    .contacto {
-        padding: 40px 5%;
-    }
-
-    .contacto input,
-    .contacto select,
-    .contacto textarea {
-        box-sizing: border-box;
-    }
-
-
-    /* Footer */
-
-    .pie-pagina {
-        flex-direction: column;
-        text-align: center;
-    }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
 }
