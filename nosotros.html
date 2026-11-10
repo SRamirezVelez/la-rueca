@@ -1,67 +1,410 @@
-<!DOCTYPE html>
 
-<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Conoce la historia, los valores y la esencia de La Rueca en Medellín." name="description"/><title>La Rueca | Nosotros</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="css/estilos.css?v=11" rel="stylesheet"/></head><body><nav class="navbar navbar-expand-lg navbar-light sticky-top">
-<div class="container">
-<a class="navbar-brand" href="index.html">
-<img alt="La Rueca" class="logo" src="img/logo-la-rueca.png"/>
-</a>
-<button aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú" class="navbar-toggler" data-bs-target="#menuPrincipal" data-bs-toggle="collapse" type="button">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="menuPrincipal">
-<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-<li class="nav-item"><a aria-current="page" class="nav-link" href="nosotros.html">Nosotros</a></li>
-<li class="nav-item"><a class="nav-link" href="experiencia.html">La experiencia Rueca</a></li>
-<li class="nav-item"><a class="nav-link" href="talleres.html">Talleres</a></li>
-<li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li><li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-<li class="nav-item"><a class="nav-link btn-menu" href="contacto.html">Contáctanos</a></li>
-</ul>
-</div>
-</div>
-</nav><main><section class="pagina-hero"><div class="container"><span class="etiqueta">NUESTRA HISTORIA</span><h1>Un lugar para crear, aprender y conectar.</h1><p>La Rueca nació en 2025 para reivindicar los procesos hechos a mano, celebrar la memoria y compartir nuevas formas de crear.</p></div></section><section class="seccion nosotros" id="nosotros">
-<div class="container">
-<div class="row align-items-center g-5">
-<div class="col-lg-6">
-<div class="imagen-seccion">
-<img alt="Participantes en un encuentro creativo de La Rueca en Medellín" loading="lazy" src="img/encuentro-creativo.png"/>
-</div>
-</div>
-<div class="col-lg-6">
-<span class="etiqueta">NUESTRA ESENCIA</span>
-<h2 class="titulo-seccion">Crear con las manos, conectar con otros.</h2>
-<p>La Rueca es un espacio creativo en Medellín donde el bordado se convierte en una forma de expresión, encuentro y creación.</p>
-<p>Diseñamos experiencias alrededor del hilo y la aguja que invitan a explorar la creatividad, aprender nuevas técnicas y descubrir todo lo que podemos crear con nuestras manos.</p>
-<p>Creemos en el valor de los procesos hechos a mano, en las historias que habitan cada creación y en la posibilidad de conectar con otros a través de experiencias compartidas.</p>
-<p>Más que enseñar a bordar, queremos inspirar a las personas a crear, experimentar y darle vida a sus propias ideas.</p>
-<a class="boton mt-3" href="experiencia.html">Conoce nuestra experiencia ↗</a>
-</div>
-</div>
-</div>
-</section><section class="seccion fondo-crema"><div class="container"><div class="encabezado-seccion text-center"><span class="etiqueta">NUESTRO PROPÓSITO</span><h2 class="titulo-seccion">Crear también es encontrarnos.</h2></div><div class="row g-4"><div class="col-md-6"><article class="tarjeta-servicio"><h3>Misión</h3><p>Crear experiencias de aprendizaje, expresión y encuentro a través del bordado y otras técnicas manuales, acercando a las personas a la creatividad y al valor de lo artesanal.</p></article></div><div class="col-md-6"><article class="tarjeta-servicio"><h3>Visión</h3><p>Consolidar a La Rueca como un referente de experiencias creativas y artesanales en Medellín, reconocido por sus encuentros, el aprendizaje y los saberes hechos a mano.</p></article></div></div></div></section></main><footer class="pie-pagina">
-<div class="container">
-<div class="row g-4 align-items-start">
-<div class="col-md-5">
-<h3>La Rueca</h3>
-<p>El futuro es hecho a mano.</p>
-<p>Un espacio para crear, compartir y conectar.</p>
-</div>
-<div class="col-md-4">
-<h4>Explora</h4>
-<a href="nosotros.html">Nosotros</a>
-<a href="experiencia.html">La experiencia Rueca</a>
-<a href="talleres.html">Talleres</a>
-<a href="productos.html">Productos</a>
-<a href="galeria.html">Galería</a>
-<a href="contacto.html">Contacto</a>
-</div>
-<div class="col-md-3">
-<h4>Contáctanos</h4>
-<p>Medellín, Colombia</p>
-<a href="https://www.instagram.com/larueca.creaciones/" rel="noopener noreferrer" target="_blank">Instagram</a>
-</div>
-</div>
-<div class="footer-inferior">
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =====================================
+       SEO Y DATOS DE LA PÁGINA
+  ====================================== -->
+
+  <title>La Rueca | Nosotros</title>
+
+  <meta
+    name="description"
+    content="Conoce la historia, los valores y la esencia de La Rueca en Medellín."
+  >
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Tipografías -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Estilos de La Rueca -->
+  <link href="css/estilos.css?v=12" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- =====================================
+       01. MENÚ DE NAVEGACIÓN
+  ====================================== -->
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+
+    <div class="container">
+
+      <!-- Logo de La Rueca -->
+      <a class="navbar-brand" href="index.html">
+
+        <img
+          src="img/logo-la-rueca.png"
+          alt="La Rueca - Inicio"
+          class="logo"
+        >
+
+      </a>
+
+      <!-- Menú para celulares -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Enlaces principales -->
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="nosotros.html"
+              aria-current="page"
+            >
+              Nosotros
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="experiencia.html">
+              La experiencia Rueca
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="talleres.html">
+              Talleres
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">
+              Productos
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">
+              Galería
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn-menu" href="contacto.html">
+              Contáctanos
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <main>
+
+    <!-- =====================================
+         02. PORTADA DE NOSOTROS
+    ====================================== -->
+
+    <section class="pagina-hero">
+
+      <div class="container">
+
+        <span class="etiqueta">
+          NUESTRA HISTORIA
+        </span>
+
+        <h1>
+          Un lugar para crear, aprender y conectar.
+        </h1>
+
+        <p>
+          La Rueca nació en 2025 para reivindicar
+          los procesos hechos a mano, celebrar la
+          memoria y compartir nuevas formas de crear.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         03. NUESTRA ESENCIA
+         HISTORIA Y FILOSOFÍA DE LA RUECA
+    ====================================== -->
+
+    <section
+      class="seccion nosotros"
+      id="nosotros"
+    >
+
+      <div class="container">
+
+        <div class="row align-items-center g-5">
+
+          <!-- =================================
+               03.1. FOTOGRAFÍA
+               Imagen: encuentro-creativo.png
+          ================================== -->
+
+          <div class="col-lg-6">
+
+            <div class="imagen-seccion">
+
+              <img
+                src="img/encuentro-creativo.png"
+                alt="Participantes en un encuentro creativo de La Rueca en Medellín"
+                loading="lazy"
+              >
+
+            </div>
+
+          </div>
+
+
+          <!-- =================================
+               03.2. PRESENTACIÓN DE LA RUECA
+          ================================== -->
+
+          <div class="col-lg-6">
+
+            <span class="etiqueta">
+              NUESTRA ESENCIA
+            </span>
+
+            <h2 class="titulo-seccion">
+              Crear con las manos, conectar con otros.
+            </h2>
+
+            <p>
+              La Rueca es un espacio creativo en Medellín
+              donde el bordado se convierte en una forma
+              de expresión, encuentro y creación.
+            </p>
+
+            <p>
+              Diseñamos experiencias alrededor del hilo
+              y la aguja que invitan a explorar la creatividad,
+              aprender nuevas técnicas y descubrir todo
+              lo que podemos crear con nuestras manos.
+            </p>
+
+            <p>
+              Creemos en el valor de los procesos hechos
+              a mano, en las historias que habitan cada
+              creación y en la posibilidad de conectar
+              con otros a través de experiencias compartidas.
+            </p>
+
+            <p>
+              Más que enseñar a bordar, queremos inspirar
+              a las personas a crear, experimentar
+              y darle vida a sus propias ideas.
+            </p>
+
+            <a
+              class="boton mt-3"
+              href="experiencia.html"
+            >
+              Conoce nuestra experiencia ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         04. NUESTRO PROPÓSITO
+         MISIÓN Y VISIÓN
+    ====================================== -->
+
+    <section
+      class="seccion fondo-crema"
+      id="proposito"
+    >
+
+      <div class="container">
+
+        <!-- Encabezado -->
+        <div class="encabezado-seccion text-center">
+
+          <span class="etiqueta">
+            NUESTRO PROPÓSITO
+          </span>
+
+          <h2 class="titulo-seccion">
+            Crear también es encontrarnos.
+          </h2>
+
+        </div>
+
+        <!-- Tarjetas -->
+        <div class="row g-4">
+
+          <!-- =================================
+               04.1. MISIÓN
+          ================================== -->
+
+          <div class="col-md-6">
+
+            <article class="tarjeta-servicio">
+
+              <h3>Misión</h3>
+
+              <p>
+                Crear experiencias de aprendizaje,
+                expresión y encuentro a través del
+                bordado y otras técnicas manuales,
+                acercando a las personas a la
+                creatividad y al valor de lo artesanal.
+              </p>
+
+            </article>
+
+          </div>
+
+
+          <!-- =================================
+               04.2. VISIÓN
+          ================================== -->
+
+          <div class="col-md-6">
+
+            <article class="tarjeta-servicio">
+
+              <h3>Visión</h3>
+
+              <p>
+                Consolidar a La Rueca como un referente
+                de experiencias creativas y artesanales
+                en Medellín, reconocido por sus encuentros,
+                el aprendizaje y los saberes hechos a mano.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================
+       05. PIE DE PÁGINA
+  ====================================== -->
+
+  <footer class="pie-pagina">
+
+    <div class="container">
+
+      <div class="row g-4 align-items-start">
+
+        <!-- Marca -->
+        <div class="col-md-5">
+
+          <h3>La Rueca</h3>
+
+          <p>El futuro es hecho a mano.</p>
+
+          <p>
+            Un espacio para crear,
+            compartir y conectar.
+          </p>
+
+        </div>
+
+        <!-- Navegación secundaria -->
+        <div class="col-md-4">
+
+          <h4>Explora</h4>
+
+          <a href="nosotros.html">Nosotros</a>
+
+          <a href="experiencia.html">
+            La experiencia Rueca
+          </a>
+
+          <a href="talleres.html">Talleres</a>
+
+          <a href="productos.html">Productos</a>
+
+          <a href="galeria.html">Galería</a>
+
+          <a href="contacto.html">Contacto</a>
+
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="col-md-3">
+
+          <h4>Contáctanos</h4>
+
+          <p>Medellín, Colombia</p>
+
+          <a
+            href="https://www.instagram.com/larueca.creaciones/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Derechos de autor -->
+      <div class="footer-inferior">
         © 2026 La Rueca — Todos los derechos reservados.
       </div>
-</div>
-</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/main.js"></script></body></html>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================
+       06. JAVASCRIPT
+  ====================================== -->
+
+  <!-- Bootstrap: navegación móvil -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Funciones generales de La Rueca -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
