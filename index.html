@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
@@ -12,7 +13,7 @@
 <!-- Tipografías -->
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
 <!-- Tu diseño nuevo -->
-<link href="css/estilos.css?v=7" rel="stylesheet"/>
+<link href="css/estilos.css?v=9" rel="stylesheet"/>
 </head>
 <body>
 <!-- MENÚ -->
@@ -51,7 +52,7 @@
             </p>
 <div class="d-flex gap-3 flex-wrap">
 <a class="boton" href="talleres.html">Explorar talleres ↗</a>
-<a class="boton-secundario" href="nosotros.html">Conócenos</a>
+<a class="boton-secundario" href="productos.html">Conocer productos</a>
 </div>
 </div>
 <div class="col-lg-6">
@@ -66,6 +67,16 @@
 </div>
 </div>
 </div>
+</div>
+</div>
+</section>
+<!-- DOS CAMINOS, UNA MISMA COMUNIDAD -->
+<section aria-label="Descubre La Rueca" class="caminos-rueca">
+<div class="container">
+<div class="caminos-grid">
+<div class="caminos-intro"><span class="etiqueta">ELIGE TU CAMINO</span><h2>¿Qué te gustaría <em>descubrir?</em></h2></div>
+<a class="camino-enlace" href="talleres.html"><span aria-hidden="true" class="camino-icono">01</span><span><strong>Participar en un taller</strong><small>Mira las fechas y elige tu encuentro.</small></span><span aria-hidden="true" class="camino-flecha">↗</span></a>
+<a class="camino-enlace" href="productos.html"><span aria-hidden="true" class="camino-icono">02</span><span><strong>Explorar el catálogo</strong><small>Materiales, piezas y pedidos especiales.</small></span><span aria-hidden="true" class="camino-flecha">↗</span></a>
 </div>
 </div>
 </section>
@@ -112,7 +123,7 @@
 <section class="seccion fondo-crema" id="servicios">
 <div class="container">
 <div class="encabezado-seccion text-center">
-<span class="etiqueta">NUESTRA EXPERIENCIA</span>
+<span class="etiqueta">LA EXPERIENCIA RUECA</span>
 <h2 class="titulo-seccion">¿Por qué elegir La Rueca?</h2>
 <p>
             Más que aprender a bordar, queremos que disfrutes
@@ -122,7 +133,7 @@
 <div class="row g-4">
 <div class="col-lg-4 col-md-6">
 <div class="tarjeta-servicio">
-<span class="icono-servicio">🪡</span>
+<span aria-hidden="true" class="icono-servicio">01</span>
 <h3>Aprende desde cero</h3>
 <p>
                 No necesitas experiencia previa. Te acompañamos paso a paso
@@ -132,7 +143,7 @@
 </div>
 <div class="col-lg-4 col-md-6">
 <div class="tarjeta-servicio">
-<span class="icono-servicio">🧵</span>
+<span aria-hidden="true" class="icono-servicio">02</span>
 <h3>Crea con tus manos</h3>
 <p>
                 Cada taller es una oportunidad para desarrollar tu
@@ -142,7 +153,7 @@
 </div>
 <div class="col-lg-4 col-md-6">
 <div class="tarjeta-servicio">
-<span class="icono-servicio">🌿</span>
+<span aria-hidden="true" class="icono-servicio">03</span>
 <h3>Conecta con otros</h3>
 <p>
                 Compartimos un espacio tranquilo para aprender, conversar
@@ -235,7 +246,24 @@
 </div>
 </section>
 <!-- UPCOMING EVENTS - INSPIRADO EN TIYA -->
-<section class="seccion fondo-crema" id="productos-destacados"><div class="container"><div class="row align-items-center g-4"><div class="col-lg-8"><span class="etiqueta">HECHO A MANO</span><h2 class="titulo-seccion">Ideas que cobran vida entre hilos.</h2><p>Descubre nuestros insumos, merchandising y bordados por encargo. Cada pieza tiene una historia que contar.</p></div><div class="col-lg-4 text-lg-end"><a class="boton" href="productos.html">Explorar productos ↗</a></div></div></div></section><section class="seccion fondo-crema" id="proximos-eventos">
+<section class="seccion productos-vitrina" id="productos-destacados">
+<div class="container">
+<div class="row align-items-end g-4 mb-4">
+<div class="col-lg-8">
+<span class="etiqueta">HECHO A MANO, CON SENTIDO</span>
+<h2 class="titulo-seccion mb-3">Ideas que cobran vida <em>entre hilos.</em></h2>
+<p class="productos-intro">Tres maneras de llevar La Rueca contigo: materiales, piezas de la marca o un bordado pensado para ti.</p>
+</div>
+<div class="col-lg-4 text-lg-end"><a class="boton-secundario" href="productos.html">Ver todos los productos ↗</a></div>
+</div>
+<div class="row g-4">
+<div class="col-md-4"><a class="producto-portada producto-insumos" href="productos.html"><span aria-hidden="true" class="producto-simbolo">01</span><span class="producto-etiqueta">PARA SEGUIR CREANDO</span><strong>Insumos</strong><span>Hilos, materiales e inspiración para tus proyectos.</span><span class="producto-ir">Explorar categoría ↗</span></a></div>
+<div class="col-md-4"><a class="producto-portada producto-merch" href="productos.html"><span aria-hidden="true" class="producto-simbolo">02</span><span class="producto-etiqueta">UN PEDACITO DE LA RUECA</span><strong>Merchandising</strong><span>Objetos que celebran el valor de crear.</span><span class="producto-ir">Explorar categoría ↗</span></a></div>
+<div class="col-md-4"><a class="producto-portada producto-encargos" href="productos.html"><span aria-hidden="true" class="producto-simbolo">03</span><span class="producto-etiqueta">HECHO ESPECIALMENTE PARA TI</span><strong>Encargos</strong><span>Cuéntanos tu idea y la hacemos realidad con hilos.</span><span class="producto-ir">Cotizar mi idea ↗</span></a></div>
+</div>
+</div>
+</section>
+<section class="seccion fondo-crema" id="proximos-eventos">
 <div class="container">
 <div class="encabezado-seccion text-center">
 <span class="etiqueta">AGENDA DE LA RUECA</span>
@@ -314,6 +342,7 @@
 </div>
 </div>
 </section>
+<div class="container text-center galeria-ver-mas"><a class="boton-secundario" href="galeria.html">Explorar toda la galería ↗</a></div>
 <!-- CONTACTO -->
 <section class="seccion fondo-crema" id="contacto">
 <div class="container">

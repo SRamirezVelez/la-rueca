@@ -731,3 +731,92 @@ a { text-decoration: none; }
  .navbar .navbar-nav {align-items: stretch !important; padding: 12px 0;}
  .navbar .nav-link {padding: 11px 12px;}
 }
+
+
+/* =========================================================
+   LA RUECA 2.0 — INICIO PREMIUM | ETAPA 2
+   Mejora progresiva sin eliminar componentes anteriores.
+========================================================= */
+:root {
+  --vino: #8f1d2c;
+  --beige-suave: #f8eee3;
+  --sombra-premium: 0 20px 55px rgba(61,41,37,.10);
+}
+body { -webkit-font-smoothing: antialiased; }
+.navbar { border-bottom: 1px solid rgba(61,41,37,.06); }
+.navbar .nav-link { transition: color .2s ease; }
+.hero { position:relative; background: radial-gradient(ellipse at 94% 5%,rgba(244,226,202,.8),transparent 45%),linear-gradient(115deg,#fffaf3 24%,#f7e9db 100%); }
+.hero::before { content:""; position:absolute; left:0; top:18%; height:140px; width:6px; background:var(--vino); border-radius:0 9px 9px 0; opacity:.65; }
+.hero .etiqueta { color: var(--vino); }
+.hero h1 { letter-spacing: -.035em; max-width: 700px; }
+.hero h1 em { color:var(--vino); }
+.hero-foto > img { border-radius: 130px 28px 130px 28px; object-position:center; }
+.hero-foto::before { content:""; position:absolute; inset:22px -16px -16px 22px; border:1px solid rgba(143,29,44,.23); border-radius:130px 28px 130px 28px; z-index:0; pointer-events:none; }
+.hero-foto > img { position:relative; z-index:1; }
+.sello-flotante { z-index:2; border:1px solid rgba(61,41,37,.05); }
+.caminos-rueca { background:#fff; border-bottom:1px solid var(--borde); }
+.caminos-grid { display:grid; grid-template-columns:1.2fr 1fr 1fr; align-items:stretch; gap:0; }
+.caminos-intro { padding:32px 25px 32px 0; display:flex; flex-direction:column; justify-content:center; }
+.caminos-intro .etiqueta { margin-bottom:8px; font-size:10px; }
+.caminos-intro h2 {font-size:clamp(22px,2vw,30px);line-height:1.22;margin:0;}
+.caminos-intro h2 em {font-style:italic;color:var(--vino);}
+.camino-enlace {display:flex;align-items:center;gap:13px;padding:30px 20px;border-left:1px solid var(--borde);color:var(--texto);transition:background .25s ease;}
+.camino-enlace:hover {background:#fcf5ed;color:var(--texto);}
+.camino-icono {display:grid;place-items:center;flex:0 0 50px;width:50px;height:50px;border-radius:15px;background:#f8eee3;font-size:24px;}
+.camino-enlace strong {display:block;font-size:15px;line-height:1.3;}
+.camino-enlace small {display:block;color:#7d6b60;font-size:12px;margin-top:4px;line-height:1.5;}
+.camino-flecha {margin-left:auto;color:var(--vino);font-size:22px;transition:transform .2s ease;}
+.camino-enlace:hover .camino-flecha {transform:translate(3px,-3px);}
+.nosotros .imagen-seccion img { border-radius:130px 30px 30px 30px; }
+.tarjeta-servicio {position:relative;overflow:hidden;}
+.tarjeta-servicio::after {content:"";position:absolute;left:28px;right:28px;bottom:0;height:3px;background:var(--vino);transform:scaleX(0);transform-origin:left;transition:transform .35s ease;}
+.tarjeta-servicio:hover::after {transform:scaleX(1);}
+.productos-vitrina {background:#fff;}
+.productos-vitrina .titulo-seccion em {font-style:italic;color:var(--vino);}
+.productos-intro {max-width:680px;color:#74665c;font-size:16px;}
+.producto-portada {min-height:300px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:30px 28px;border-radius:24px;border:1px solid rgba(61,41,37,.07);color:var(--texto);transition:transform .3s ease,box-shadow .3s ease;}
+.producto-portada:hover {transform:translateY(-7px);box-shadow:var(--sombra-premium);color:var(--texto);}
+.producto-insumos {background:#f9eede;}
+.producto-merch {background:#f4e5df;}
+.producto-encargos {background:#edf0e4;}
+.producto-simbolo {height:66px;width:66px;border-radius:20px;background:rgba(255,255,255,.72);display:grid;place-items:center;font-size:34px;margin-bottom:9px;}
+.producto-etiqueta {font-family:'DM Sans',sans-serif;color:var(--vino);font-size:10px;font-weight:700;letter-spacing:1.65px;}
+.producto-portada strong {font-family:'Playfair Display',Georgia,serif;font-size:30px;line-height:1.16;font-weight:600;}
+.producto-portada > span:not(.producto-simbolo):not(.producto-etiqueta):not(.producto-ir) {font-size:14px;line-height:1.6;color:#655a52;}
+.producto-ir {margin-top:auto;padding-top:13px;font-size:13px;font-weight:700;color:var(--vino);}
+.galeria-ver-mas {padding-top:30px;}
+.tarjeta-taller,.tarjeta-servicio {will-change:transform;}
+@media(max-width:991px){.caminos-grid {grid-template-columns:1fr 1fr;}.caminos-intro{grid-column:1/-1;padding:26px 0 12px;}.camino-enlace:first-of-type {border-left:0;}.camino-enlace{padding:20px 14px;}.hero-foto::before{inset:14px -8px -8px 14px;}}
+@media(max-width:575px){.hero::before{display:none}.hero-foto > img{border-radius:75px 20px 75px 20px}.hero-foto::before{border-radius:75px 20px 75px 20px}.caminos-grid{grid-template-columns:1fr}.caminos-intro{grid-column:auto}.camino-enlace{border-left:0;border-top:1px solid var(--borde);padding:20px 0}.producto-portada{min-height:255px}.sello-flotante{left:8px;padding:10px 13px}}
+@media(prefers-reduced-motion:reduce){.camino-enlace,.camino-flecha,.producto-portada,.tarjeta-servicio::after{transition:none!important}}
+
+
+/* =========================================
+   ETAPA 3 — DISEÑO EDITORIAL SIN EMOJIS REPETIDOS
+   Mantiene la paleta, tipografía y tarjetas originales.
+========================================= */
+.camino-icono, .icono-servicio, .producto-simbolo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  color: var(--vino, #8f1d2c);
+  letter-spacing: -.045em;
+  font-variant-numeric: lining-nums;
+}
+.camino-icono { font-size: 21px; border-radius: 50%; background: #f8eee3; }
+.icono-servicio {
+  font-size: 30px;
+  width: 72px; height: 72px; border-radius: 50%;
+  background: #f9f0e7; border: 1px solid #eee0d5;
+}
+.producto-simbolo {
+  width: 56px; height: 56px; font-size: 23px;
+  border-radius: 50%; border: 1px solid rgba(143,29,44,.13);
+}
+/* Estas tarjetas usan numeración, no emoticonos ni íconos repetidos */
+.experiencia-editorial { background: #fff; }
+.experiencia-editorial p { color: #6d5b53; font-size: 16px; }
+.experiencia-editorial .imagen-seccion img { height: 470px; object-position: center; }
+.productos-vitrina .producto-portada { gap: 13px; }
+@media (max-width: 767px) {
+  .experiencia-editorial .imagen-seccion img { height: 330px; }
+}
