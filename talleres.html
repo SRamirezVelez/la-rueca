@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Bordado para principiantes, talleres privados y encuentros creativos en Medellín."><title>La Rueca | Talleres</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/estilos.css?v=7"></head><body><nav class="navbar navbar-expand-lg navbar-light sticky-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<img alt="La Rueca" class="logo" src="img/logo-la-rueca.png"/>
+</a>
+<button aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú" class="navbar-toggler" data-bs-target="#menuPrincipal" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menuPrincipal">
+<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+<li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+<li class="nav-item"><a class="nav-link" href="experiencia.html">La experiencia Rueca</a></li>
+<li class="nav-item"><a aria-current="page" class="nav-link" href="talleres.html">Talleres</a></li>
+<li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li><li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+<li class="nav-item"><a class="nav-link btn-menu" href="contacto.html">Contáctanos</a></li>
+</ul>
+</div>
+</div>
+</nav><main><section class="pagina-hero"><div class="container"><span class="etiqueta">CREA CON NOSOTROS</span><h1>Cada puntada es una historia.</h1><p>Conoce nuestras experiencias, consulta próximas fechas y ven a crear a tu ritmo.</p></div></section><section class="seccion" id="talleres">
+<div class="container">
+<div class="encabezado-seccion text-center">
+<span class="etiqueta">CREA CON NOSOTROS</span>
+<h2 class="titulo-seccion">Nuestros talleres</h2>
+<p>
+            Encuentra una experiencia para descubrir,
+            aprender y disfrutar el arte del bordado.
+          </p>
+</div>
+<div class="row g-4">
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Bordado para principiantes" src="img/galeria-1.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">PRINCIPIANTES</span>
+<h3>Bordado para principiantes</h3>
+<p>Aprende las puntadas básicas y crea tu primera pieza bordada paso a paso.</p>
+<a href="#proximos-eventos">Ver próximas fechas →</a>
+</div>
+</article>
+</div>
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Bordado floral" src="img/detalle-bordado.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">CREATIVIDAD</span>
+<h3>Bordado floral</h3>
+<p>Aprende a bordar flores y elementos inspirados en la naturaleza.</p>
+<a href="#proximos-eventos">Ver próximas fechas →</a>
+</div>
+</article>
+</div>
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Personalización de prendas" src="img/bordado-chaqueta.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">PERSONALIZACIÓN</span>
+<h3>Personalización de prendas</h3>
+<p>Transforma prendas y accesorios con diseños únicos hechos a mano.</p>
+<a href="#proximos-eventos">Ver próximas fechas →</a>
+</div>
+</article>
+</div>
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Taller entre amigas" src="img/encuentro-creativo.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">EXPERIENCIAS</span>
+<h3>Taller creativo entre amigas</h3>
+<p>Una experiencia para bordar, conversar, aprender y compartir en grupo.</p>
+<a href="contacto.html">Consultar disponibilidad →</a>
+</div>
+</article>
+</div>
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Taller privado" src="img/clase-personalizada.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">PERSONALIZADO</span>
+<h3>Taller privado</h3>
+<p>Una experiencia personalizada de bordado para personas o grupos pequeños.</p>
+<a href="contacto.html">Consultar disponibilidad →</a>
+</div>
+</article>
+</div>
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Taller para empresas" src="img/taller-grupal.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">EMPRESAS</span>
+<h3>Talleres para empresas</h3>
+<p>Actividades creativas para equipos, empresas y eventos especiales.</p>
+<a href="contacto.html">Consultar disponibilidad →</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section><section class="seccion fondo-crema" id="proximos-eventos">
+<div class="container">
+<div class="encabezado-seccion text-center">
+<span class="etiqueta">AGENDA DE LA RUECA</span>
+<h2 class="titulo-seccion">Próximos talleres</h2>
+<p>
+            Descubre nuestras próximas experiencias,
+            conoce las fechas y reserva tu lugar.
+          </p>
+</div>
+<!-- Se llena automáticamente desde eventos.js -->
+<div class="eventos-contenedor" id="lista-eventos"></div>
+</div>
+</section><section class="seccion"><div class="container"><div class="encabezado-seccion text-center"><span class="etiqueta">PREGUNTAS FRECUENTES</span><h2 class="titulo-seccion">Antes de venir a bordar</h2></div><div class="accordion mx-auto" id="faqRueca" style="max-width:860px"><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">¿Necesito experiencia previa?</button></h3><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqRueca"><div class="accordion-body">No. Nuestro taller de bordado para principiantes está pensado para empezar desde cero.</div></div></div><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">¿Qué materiales incluye cada taller?</button></h3><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqRueca"><div class="accordion-body">Los materiales pueden variar según la experiencia. Consulta los detalles del taller por WhatsApp antes de inscribirte.</div></div></div><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">¿Cómo confirmo mi cupo o consulto cambios?</button></h3><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqRueca"><div class="accordion-body">Escríbenos por WhatsApp para conocer disponibilidad, confirmación y condiciones de cada convocatoria.</div></div></div></div></div></section></main><footer class="pie-pagina">
+<div class="container">
+<div class="row g-4 align-items-start">
+<div class="col-md-5">
+<h3>La Rueca</h3>
+<p>El futuro es hecho a mano.</p>
+<p>Un espacio para crear, compartir y conectar.</p>
+</div>
+<div class="col-md-4">
+<h4>Explora</h4>
+<a href="nosotros.html">Nosotros</a>
+<a href="experiencia.html">La experiencia Rueca</a>
+<a href="talleres.html">Talleres</a>
+<a href="productos.html">Productos</a>
+<a href="galeria.html">Galería</a>
+<a href="contacto.html">Contacto</a>
+</div>
+<div class="col-md-3">
+<h4>Contáctanos</h4>
+<p>Medellín, Colombia</p>
+<a href="https://www.instagram.com/larueca.creaciones/" rel="noopener noreferrer" target="_blank">Instagram</a>
+</div>
+</div>
+<div class="footer-inferior">
+        © 2026 La Rueca — Todos los derechos reservados.
+      </div>
+</div>
+</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/main.js"></script><script src="jv/eventos.js"></script></body></html>

@@ -1,539 +1,425 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="La Rueca: talleres de bordado, creatividad y experiencias hechas a mano en Medellín.">
-  <title>La Rueca | El futuro es hecho a mano</title>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="La Rueca: talleres de bordado, creatividad y experiencias hechas a mano en Medellín." name="description"/>
+<title>La Rueca | Inicio · El futuro es hecho a mano</title>
 <!-- Bootstrap -->
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-  rel="stylesheet"
->
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
 <!-- Tipografías -->
-<link
-  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-  rel="stylesheet"
->
-
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
 <!-- Tu diseño nuevo -->
-<link rel="stylesheet" href="css/estilos.css?v=4">
+<link href="css/estilos.css?v=7" rel="stylesheet"/>
 </head>
-
 <body>
-
-  <!-- MENÚ -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#inicio">
-        <img src="img/logo-la-rueca.png" alt="La Rueca" class="logo">
-      </a>
-
-      <button class="navbar-toggler" type="button"
-        data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
-        aria-controls="menuPrincipal" aria-expanded="false"
-        aria-label="Abrir menú">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="menuPrincipal">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#talleres">Talleres</a></li>
-          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
-          <li class="nav-item"><a class="nav-link btn-menu" href="#contacto">Contáctanos</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-
-    <!-- PORTADA -->
-    <section id="inicio" class="hero">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <span class="etiqueta">BIENVENIDOS A LA RUECA</span>
-            <h1>El futuro es <em>hecho a mano.</em></h1>
-            <h2>Talleres de bordado en Medellín</h2>
-            <p class="descripcion">
+<!-- MENÚ -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<img alt="La Rueca" class="logo" src="img/logo-la-rueca.png"/>
+</a>
+<button aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú" class="navbar-toggler" data-bs-target="#menuPrincipal" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menuPrincipal">
+<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+<li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+<li class="nav-item"><a class="nav-link" href="experiencia.html">La experiencia Rueca</a></li>
+<li class="nav-item"><a class="nav-link" href="talleres.html">Talleres</a></li>
+<li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li><li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+<li class="nav-item"><a class="nav-link btn-menu" href="contacto.html">Contáctanos</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<main>
+<!-- PORTADA -->
+<section class="hero" id="inicio">
+<div class="container">
+<div class="row align-items-center g-5">
+<div class="col-lg-6">
+<span class="etiqueta">BIENVENIDOS A LA RUECA</span>
+<h1>El futuro es <em>hecho a mano.</em></h1>
+<h2>Talleres de bordado en Medellín</h2>
+<p class="descripcion">
               Un espacio para aprender, bordar, compartir y
               encontrarnos alrededor del hilo y la creatividad.
               Descubre el placer de crear algo único con tus manos.
             </p>
-            <div class="d-flex gap-3 flex-wrap">
-              <a href="#talleres" class="boton">Explorar talleres ↗</a>
-              <a href="#nosotros" class="boton-secundario">Conócenos</a>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="hero-foto">
-              <img src="img/hero-bordado.jpg"
-                alt="Experiencia de bordado artesanal">
-                <div class="sello-flotante">
-                <img
-                src="img/aguja-la-rueca.png"
-                alt="Aguja de La Rueca"
-                class="aguja-logo"
-                >
-
-                <div>
-                <strong>Hecho con amor</strong>
-                <small>Experiencias creativas</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NOSOTROS -->
-    <section id="nosotros" class="seccion nosotros">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <div class="imagen-seccion">
-  <img
-    src="img/imagen-nosotros.png"
-    alt="Participantes compartiendo una experiencia creativa en La Rueca"
-    loading="lazy"
-  >
+<div class="d-flex gap-3 flex-wrap">
+<a class="boton" href="talleres.html">Explorar talleres ↗</a>
+<a class="boton-secundario" href="nosotros.html">Conócenos</a>
 </div>
-          </div>
-
-          <div class="col-lg-6">
-            <span class="etiqueta">NUESTRA ESENCIA</span>
-            <h2 class="titulo-seccion">
+</div>
+<div class="col-lg-6">
+<div class="hero-foto">
+<img alt="Experiencia de bordado artesanal" src="img/hero-bordado.jpg"/>
+<div class="sello-flotante">
+<img alt="Aguja de La Rueca" class="aguja-logo" src="img/aguja-la-rueca.png"/>
+<div>
+<strong>Hecho con amor</strong>
+<small>Experiencias creativas</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- NOSOTROS -->
+<section class="seccion nosotros" id="nosotros">
+<div class="container">
+<div class="row align-items-center g-5">
+<div class="col-lg-6">
+<div class="imagen-seccion">
+<img alt="Participantes compartiendo una experiencia creativa en La Rueca" loading="lazy" src="img/imagen-nosotros.png"/>
+</div>
+</div>
+<div class="col-lg-6">
+<span class="etiqueta">NUESTRA ESENCIA</span>
+<h2 class="titulo-seccion">
               Un lugar para crear, aprender y conectar.
             </h2>
-
-            <p>
+<p>
               La Rueca es un espacio creativo en Medellín dedicado
               a los talleres de bordado y a las experiencias hechas a mano.
             </p>
-
-            <p>
+<p>
               Creamos espacios para aprender, compartir y encontrarnos
               alrededor del hilo, la aguja y la creatividad.
             </p>
-
-            <p>
+<p>
               Acompañamos a personas que quieren aprender bordado
               desde cero, desarrollar su creatividad o disfrutar
               una experiencia diferente.
             </p>
-
-            <p>
+<p>
               Nos diferencia el valor que damos al proceso manual,
               al encuentro y a la creación de piezas únicas hechas
               con tiempo y dedicación.
             </p>
-
-            <a href="#servicios" class="boton mt-3">
+<a class="boton mt-3" href="nosotros.html">
               Descubre La Rueca ↗
             </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICIOS -->
-    <section id="servicios" class="seccion fondo-crema">
-      <div class="container">
-        <div class="encabezado-seccion text-center">
-          <span class="etiqueta">NUESTRA EXPERIENCIA</span>
-          <h2 class="titulo-seccion">¿Por qué elegir La Rueca?</h2>
-          <p>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICIOS -->
+<section class="seccion fondo-crema" id="servicios">
+<div class="container">
+<div class="encabezado-seccion text-center">
+<span class="etiqueta">NUESTRA EXPERIENCIA</span>
+<h2 class="titulo-seccion">¿Por qué elegir La Rueca?</h2>
+<p>
             Más que aprender a bordar, queremos que disfrutes
             cada momento del proceso creativo.
           </p>
-        </div>
-
-        <div class="row g-4">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="tarjeta-servicio">
-              <span class="icono-servicio">🪡</span>
-              <h3>Aprende desde cero</h3>
-              <p>
+</div>
+<div class="row g-4">
+<div class="col-lg-4 col-md-6">
+<div class="tarjeta-servicio">
+<span class="icono-servicio">🪡</span>
+<h3>Aprende desde cero</h3>
+<p>
                 No necesitas experiencia previa. Te acompañamos paso a paso
                 para que aprendas las técnicas básicas del bordado.
               </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="tarjeta-servicio">
-              <span class="icono-servicio">🧵</span>
-              <h3>Crea con tus manos</h3>
-              <p>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="tarjeta-servicio">
+<span class="icono-servicio">🧵</span>
+<h3>Crea con tus manos</h3>
+<p>
                 Cada taller es una oportunidad para desarrollar tu
                 creatividad y crear una pieza única hecha por ti.
               </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="tarjeta-servicio">
-              <span class="icono-servicio">🌿</span>
-              <h3>Conecta con otros</h3>
-              <p>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="tarjeta-servicio">
+<span class="icono-servicio">🌿</span>
+<h3>Conecta con otros</h3>
+<p>
                 Compartimos un espacio tranquilo para aprender, conversar
                 y encontrarnos alrededor del bordado.
               </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- TALLERES -->
-    <section id="talleres" class="seccion">
-      <div class="container">
-        <div class="encabezado-seccion text-center">
-          <span class="etiqueta">CREA CON NOSOTROS</span>
-          <h2 class="titulo-seccion">Nuestros talleres</h2>
-          <p>
+</div>
+</div>
+</div>
+<div class="text-center mt-5"><a class="boton-secundario" href="experiencia.html">Conoce la experiencia Rueca ↗</a></div></div>
+</section>
+<!-- TALLERES -->
+<section class="seccion" id="talleres">
+<div class="container">
+<div class="encabezado-seccion text-center">
+<span class="etiqueta">CREA CON NOSOTROS</span>
+<h2 class="titulo-seccion">Nuestros talleres</h2>
+<p>
             Encuentra una experiencia para descubrir,
             aprender y disfrutar el arte del bordado.
           </p>
-        </div>
-
-        <div class="row g-4">
-
-          <div class="col-lg-4 col-md-6">
-            <article class="tarjeta-taller">
-              <img src="img/galeria-1.png" alt="Bordado para principiantes">
-              <div class="tarjeta-cuerpo">
-                <span class="tipo-taller">PRINCIPIANTES</span>
-                <h3>Bordado para principiantes</h3>
-                <p>Aprende las puntadas básicas y crea tu primera pieza bordada paso a paso.</p>
-                <a href="#proximos-eventos">Ver próximas fechas →</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <article class="tarjeta-taller">
-              <img src="img/detalle-bordado.png" alt="Bordado floral">
-              <div class="tarjeta-cuerpo">
-                <span class="tipo-taller">CREATIVIDAD</span>
-                <h3>Bordado floral</h3>
-                <p>Aprende a bordar flores y elementos inspirados en la naturaleza.</p>
-                <a href="#proximos-eventos">Ver próximas fechas →</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <article class="tarjeta-taller">
-              <img src="img/bordado-chaqueta.png" alt="Personalización de prendas">
-              <div class="tarjeta-cuerpo">
-                <span class="tipo-taller">PERSONALIZACIÓN</span>
-                <h3>Personalización de prendas</h3>
-                <p>Transforma prendas y accesorios con diseños únicos hechos a mano.</p>
-                <a href="#proximos-eventos">Ver próximas fechas →</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <article class="tarjeta-taller">
-              <img src="img/encuentro-creativo.png" alt="Taller entre amigas">
-              <div class="tarjeta-cuerpo">
-                <span class="tipo-taller">EXPERIENCIAS</span>
-                <h3>Taller creativo entre amigas</h3>
-                <p>Una experiencia para bordar, conversar, aprender y compartir en grupo.</p>
-                <a href="#contacto">Consultar disponibilidad →</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <article class="tarjeta-taller">
-              <img src="img/clase-personalizada.png" alt="Taller privado">
-              <div class="tarjeta-cuerpo">
-                <span class="tipo-taller">PERSONALIZADO</span>
-                <h3>Taller privado</h3>
-                <p>Una experiencia personalizada de bordado para personas o grupos pequeños.</p>
-                <a href="#contacto">Consultar disponibilidad →</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <article class="tarjeta-taller">
-              <img src="img/taller-grupal.png" alt="Taller para empresas">
-              <div class="tarjeta-cuerpo">
-                <span class="tipo-taller">EMPRESAS</span>
-                <h3>Talleres para empresas</h3>
-                <p>Actividades creativas para equipos, empresas y eventos especiales.</p>
-                <a href="#contacto">Consultar disponibilidad →</a>
-              </div>
-            </article>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- UPCOMING EVENTS - INSPIRADO EN TIYA -->
-    <section id="proximos-eventos" class="seccion fondo-crema">
-      <div class="container">
-
-        <div class="encabezado-seccion text-center">
-          <span class="etiqueta">AGENDA DE LA RUECA</span>
-          <h2 class="titulo-seccion">Próximos talleres</h2>
-          <p>
+</div>
+<div class="row g-4">
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Bordado para principiantes" src="img/galeria-1.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">PRINCIPIANTES</span>
+<h3>Bordado para principiantes</h3>
+<p>Aprende las puntadas básicas y crea tu primera pieza bordada paso a paso.</p>
+<a href="talleres.html#proximos-eventos">Ver próximas fechas →</a>
+</div>
+</article>
+</div>
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Bordado floral" src="img/detalle-bordado.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">CREATIVIDAD</span>
+<h3>Bordado floral</h3>
+<p>Aprende a bordar flores y elementos inspirados en la naturaleza.</p>
+<a href="talleres.html#proximos-eventos">Ver próximas fechas →</a>
+</div>
+</article>
+</div>
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Personalización de prendas" src="img/bordado-chaqueta.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">PERSONALIZACIÓN</span>
+<h3>Personalización de prendas</h3>
+<p>Transforma prendas y accesorios con diseños únicos hechos a mano.</p>
+<a href="talleres.html#proximos-eventos">Ver próximas fechas →</a>
+</div>
+</article>
+</div>
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Taller entre amigas" src="img/encuentro-creativo.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">EXPERIENCIAS</span>
+<h3>Taller creativo entre amigas</h3>
+<p>Una experiencia para bordar, conversar, aprender y compartir en grupo.</p>
+<a href="contacto.html">Consultar disponibilidad →</a>
+</div>
+</article>
+</div>
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Taller privado" src="img/clase-personalizada.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">PERSONALIZADO</span>
+<h3>Taller privado</h3>
+<p>Una experiencia personalizada de bordado para personas o grupos pequeños.</p>
+<a href="contacto.html">Consultar disponibilidad →</a>
+</div>
+</article>
+</div>
+<div class="col-lg-4 col-md-6">
+<article class="tarjeta-taller">
+<img alt="Taller para empresas" src="img/taller-grupal.png"/>
+<div class="tarjeta-cuerpo">
+<span class="tipo-taller">EMPRESAS</span>
+<h3>Talleres para empresas</h3>
+<p>Actividades creativas para equipos, empresas y eventos especiales.</p>
+<a href="contacto.html">Consultar disponibilidad →</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- UPCOMING EVENTS - INSPIRADO EN TIYA -->
+<section class="seccion fondo-crema" id="productos-destacados"><div class="container"><div class="row align-items-center g-4"><div class="col-lg-8"><span class="etiqueta">HECHO A MANO</span><h2 class="titulo-seccion">Ideas que cobran vida entre hilos.</h2><p>Descubre nuestros insumos, merchandising y bordados por encargo. Cada pieza tiene una historia que contar.</p></div><div class="col-lg-4 text-lg-end"><a class="boton" href="productos.html">Explorar productos ↗</a></div></div></div></section><section class="seccion fondo-crema" id="proximos-eventos">
+<div class="container">
+<div class="encabezado-seccion text-center">
+<span class="etiqueta">AGENDA DE LA RUECA</span>
+<h2 class="titulo-seccion">Próximos talleres</h2>
+<p>
             Descubre nuestras próximas experiencias,
             conoce las fechas y reserva tu lugar.
           </p>
-        </div>
-
-        <!-- Se llena automáticamente desde eventos.js -->
-        <div id="lista-eventos" class="eventos-contenedor"></div>
-
-      </div>
-    </section>
-
-    <!-- GALERÍA -->
-    <section id="galeria" class="seccion">
-      <div class="container">
-
-        <div class="encabezado-seccion text-center">
-          <span class="etiqueta">MOMENTOS ESPECIALES</span>
-          <h2 class="titulo-seccion">Nuestra galería</h2>
-          <p>
+</div>
+<!-- Se llena automáticamente desde eventos.js -->
+<div class="eventos-contenedor" id="lista-eventos"></div>
+</div>
+</section>
+<!-- GALERÍA -->
+<section class="seccion" id="galeria">
+<div class="container">
+<div class="encabezado-seccion text-center">
+<span class="etiqueta">MOMENTOS ESPECIALES</span>
+<h2 class="titulo-seccion">Nuestra galería</h2>
+<p>
             Historias, puntadas y momentos que compartimos
             en cada experiencia.
           </p>
-        </div>
-
-
+</div>
 <!-- GALERÍA PREMIUM LA RUECA -->
-        <div class="galeria-premium">
-          <div class="swiper galeria-swiper" aria-label="Galería de fotografías de La Rueca">
-            <div class="swiper-wrapper">
+<div class="galeria-premium">
+<div aria-label="Galería de fotografías de La Rueca" class="swiper galeria-swiper">
+<div class="swiper-wrapper">
 <!-- IMAGEN 1 -->
 <div class="swiper-slide">
-  <img src="img/galeria-1.png"
-       alt="Experiencia creativa en La Rueca"
-       loading="lazy">
+<img alt="Experiencia creativa en La Rueca" loading="lazy" src="img/galeria-1.png"/>
 </div>
-
 <!-- IMAGEN 2 -->
 <div class="swiper-slide">
-  <img src="img/galeria-2.png"
-       alt="Taller de bordado y aprendizaje"
-       loading="lazy">
+<img alt="Taller de bordado y aprendizaje" loading="lazy" src="img/galeria-2.png"/>
 </div>
-
 <!-- IMAGEN 3 -->
 <div class="swiper-slide">
-  <img src="img/galeria-3.png"
-       alt="Creaciones artesanales de La Rueca"
-       loading="lazy">
+<img alt="Creaciones artesanales de La Rueca" loading="lazy" src="img/galeria-3.png"/>
 </div>
-
 <!-- IMAGEN 4 -->
 <div class="swiper-slide">
-  <img src="img/galeria-4.png"
-       alt="Materiales y técnicas de bordado"
-       loading="lazy">
+<img alt="Materiales y técnicas de bordado" loading="lazy" src="img/galeria-4.png"/>
 </div>
-
 <!-- IMAGEN 5 -->
 <div class="swiper-slide">
-  <img src="img/galeria-5.png"
-       alt="Momentos especiales de nuestros talleres"
-       loading="lazy">
+<img alt="Momentos especiales de nuestros talleres" loading="lazy" src="img/galeria-5.png"/>
 </div>
-
 <!-- IMAGEN 6 -->
 <div class="swiper-slide">
-  <img src="img/galeria-6.png"
-       alt="Bordados hechos a mano"
-       loading="lazy">
+<img alt="Bordados hechos a mano" loading="lazy" src="img/galeria-6.png"/>
 </div>
-
 <!-- IMAGEN 7 -->
 <div class="swiper-slide">
-  <img src="img/galeria-7.png"
-       alt="Diseños de bordado artesanal"
-       loading="lazy">
+<img alt="Diseños de bordado artesanal" loading="lazy" src="img/galeria-7.png"/>
 </div>
-
 <!-- IMAGEN 8 -->
 <div class="swiper-slide">
-  <img src="img/galeria-8.png"
-       alt="Arte y creatividad con hilos"
-       loading="lazy">
+<img alt="Arte y creatividad con hilos" loading="lazy" src="img/galeria-8.png"/>
 </div>
-
 <!-- IMAGEN 9 -->
 <div class="swiper-slide">
-  <img src="img/galeria-9.png"
-       alt="Detalles de nuestras creaciones"
-       loading="lazy">
+<img alt="Detalles de nuestras creaciones" loading="lazy" src="img/galeria-9.png"/>
 </div>
-
 <!-- IMAGEN 10 -->
 <div class="swiper-slide">
-  <img src="img/galeria-10.png"
-       alt="Espacios para compartir y crear"
-       loading="lazy">
+<img alt="Espacios para compartir y crear" loading="lazy" src="img/galeria-10.png"/>
 </div>
-            </div>
-          </div>
-
-          <div class="galeria-controles">
-            <button class="galeria-anterior" type="button" aria-label="Fotografía anterior">&#8592;</button>
-            <div class="galeria-paginacion"></div>
-            <button class="galeria-siguiente" type="button" aria-label="Fotografía siguiente">&#8594;</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="seccion fondo-crema">
-      <div class="container">
-        <div class="row g-5 align-items-center">
-
-          <div class="col-lg-5">
-            <span class="etiqueta">HABLEMOS</span>
-            <h2 class="titulo-seccion">Tu próxima experiencia comienza aquí.</h2>
-            <p>
+</div>
+</div>
+<div class="galeria-controles">
+<button aria-label="Fotografía anterior" class="galeria-anterior" type="button">←</button>
+<div class="galeria-paginacion"></div>
+<button aria-label="Fotografía siguiente" class="galeria-siguiente" type="button">→</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACTO -->
+<section class="seccion fondo-crema" id="contacto">
+<div class="container">
+<div class="row g-5 align-items-center">
+<div class="col-lg-5">
+<span class="etiqueta">HABLEMOS</span>
+<h2 class="titulo-seccion">Tu próxima experiencia comienza aquí.</h2>
+<p>
               ¿Quieres vivir una experiencia creativa con La Rueca?
               Escríbenos para conocer nuestros talleres,
               consultar fechas o resolver tus dudas.
             </p>
-
-            <div class="detalle-contacto">
-              <strong>📍 Ubicación</strong>
-              <span>Medellín, Antioquia</span>
-            </div>
-
-            <div class="detalle-contacto">
-              <strong>📱 WhatsApp</strong>
-              <span>300 652 2403</span>
-            </div>
-
-            <div class="detalle-contacto">
-              <strong>📷 Instagram</strong>
-              <a href="https://www.instagram.com/larueca.creaciones/"
-                 target="_blank" rel="noopener noreferrer">
+<div class="detalle-contacto">
+<strong>📍 Ubicación</strong>
+<span>Medellín, Antioquia</span>
+</div>
+<div class="detalle-contacto">
+<strong>📱 WhatsApp</strong>
+<span>300 652 2403</span>
+</div>
+<div class="detalle-contacto">
+<strong>📷 Instagram</strong>
+<a href="https://www.instagram.com/larueca.creaciones/" rel="noopener noreferrer" target="_blank">
                 @larueca.creaciones
               </a>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="tarjeta-contacto">
-              <h3>Envíanos un mensaje</h3>
-
-              <form id="formulario-contacto">
-                <div class="row g-3">
-
-                  <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input id="nombre" class="form-control" type="text" required>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label for="telefono" class="form-label">Teléfono</label>
-                    <input id="telefono" class="form-control" type="tel" required>
-                  </div>
-
-                  <div class="col-12">
-                    <label for="correo" class="form-label">Correo electrónico</label>
-                    <input id="correo" class="form-control" type="email">
-                  </div>
-
-                  <div class="col-12">
-                    <label for="servicio" class="form-label">Taller de interés</label>
-                    <select id="servicio" class="form-select">
-                      <option>Bordado para principiantes</option>
-                      <option>Bordado floral</option>
-                      <option>Personalización de prendas</option>
-                      <option>Taller creativo entre amigas</option>
-                      <option>Taller privado</option>
-                      <option>Talleres para empresas</option>
-                    </select>
-                  </div>
-
-                  <div class="col-12">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea id="mensaje" class="form-control" rows="4"
-                      placeholder="Cuéntanos qué te gustaría aprender..."></textarea>
-                  </div>
-
-                  <div class="col-12">
-                    <button type="submit" class="boton w-100">
+</div>
+</div>
+<div class="col-lg-7">
+<div class="tarjeta-contacto">
+<h3>Envíanos un mensaje</h3>
+<form id="formulario-contacto">
+<div class="row g-3">
+<div class="col-md-6">
+<label class="form-label" for="nombre">Nombre</label>
+<input class="form-control" id="nombre" required="" type="text"/>
+</div>
+<div class="col-md-6">
+<label class="form-label" for="telefono">Teléfono</label>
+<input class="form-control" id="telefono" required="" type="tel"/>
+</div>
+<div class="col-12">
+<label class="form-label" for="correo">Correo electrónico</label>
+<input class="form-control" id="correo" type="email"/>
+</div>
+<div class="col-12">
+<label class="form-label" for="servicio">Taller de interés</label>
+<select class="form-select" id="servicio">
+<option>Bordado para principiantes</option>
+<option>Bordado floral</option>
+<option>Personalización de prendas</option>
+<option>Taller creativo entre amigas</option>
+<option>Taller privado</option>
+<option>Talleres para empresas</option>
+</select>
+</div>
+<div class="col-12">
+<label class="form-label" for="mensaje">Mensaje</label>
+<textarea class="form-control" id="mensaje" placeholder="Cuéntanos qué te gustaría aprender..." rows="4"></textarea>
+</div>
+<div class="col-12">
+<button class="boton w-100" type="submit">
                       Enviar consulta por WhatsApp ↗
                     </button>
-                  </div>
-
-                </div>
-              </form>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- PIE DE PÁGINA -->
-  <footer class="pie-pagina">
-    <div class="container">
-      <div class="row g-4 align-items-start">
-        <div class="col-md-5">
-          <h3>La Rueca</h3>
-          <p>El futuro es hecho a mano.</p>
-          <p>Un espacio para crear, compartir y conectar.</p>
-        </div>
-
-        <div class="col-md-4">
-          <h4>Explora</h4>
-          <a href="#nosotros">Nosotros</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#talleres">Talleres</a>
-          <a href="#galeria">Galería</a>
-        </div>
-
-        <div class="col-md-3">
-          <h4>Contáctanos</h4>
-          <p>Medellín, Colombia</p>
-          <a href="https://www.instagram.com/larueca.creaciones/"
-             target="_blank" rel="noopener noreferrer">Instagram</a>
-        </div>
-      </div>
-
-      <div class="footer-inferior">
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- PIE DE PÁGINA -->
+<footer class="pie-pagina">
+<div class="container">
+<div class="row g-4 align-items-start">
+<div class="col-md-5">
+<h3>La Rueca</h3>
+<p>El futuro es hecho a mano.</p>
+<p>Un espacio para crear, compartir y conectar.</p>
+</div>
+<div class="col-md-4">
+<h4>Explora</h4>
+<a href="nosotros.html">Nosotros</a>
+<a href="experiencia.html">La experiencia Rueca</a>
+<a href="talleres.html">Talleres</a>
+<a href="productos.html">Productos</a>
+<a href="galeria.html">Galería</a>
+<a href="contacto.html">Contacto</a>
+</div>
+<div class="col-md-3">
+<h4>Contáctanos</h4>
+<p>Medellín, Colombia</p>
+<a href="https://www.instagram.com/larueca.creaciones/" rel="noopener noreferrer" target="_blank">Instagram</a>
+</div>
+</div>
+<div class="footer-inferior">
         © 2026 La Rueca — Todos los derechos reservados.
       </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="jv/eventos.js"></script>
-
-  <!-- Swiper: cargar antes de inicializar -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="jv/eventos.js"></script>
+<!-- Swiper: cargar antes de inicializar -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
     document.addEventListener("DOMContentLoaded", function () {
       if (typeof Swiper === "undefined") {
         console.error("Swiper no se cargó. Revisa la conexión a internet.");
@@ -573,6 +459,5 @@
       });
     });
   </script>
-
-</body>
+<script defer="True" src="js/main.js"></script></body>
 </html>

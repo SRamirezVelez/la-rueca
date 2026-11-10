@@ -710,12 +710,24 @@ a { text-decoration: none; }
   .galeria-premium .galeria-swiper .swiper-slide { transition: none; }
 }
 
-/* Fotografías uniformes de la galería */
 
-.galeria-premium .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+/* LA RUECA 2.0 — páginas interiores: sin reemplazar estilos existentes */
+.pagina-hero{padding:84px 0 68px;background:linear-gradient(125deg,#fffaf3,#f8e9d8);text-align:center;}
+.pagina-hero h1{font-size:clamp(40px,5vw,66px);line-height:1.15;color:var(--texto);margin-bottom:18px;}
+.pagina-hero p{max-width:730px;margin:0 auto;color:#6d5b53;font-size:18px;}
+.navbar .nav-link[aria-current="page"]{color:var(--rojo);text-decoration:underline;text-underline-offset:7px;}
+.accordion-button:not(.collapsed){background:#f8eee3;color:#3d2925;}
+.accordion-button:focus{box-shadow:0 0 0 3px rgba(176,24,24,.18);}
+:focus-visible{outline:3px solid #8f1d2c;outline-offset:3px;}
+@media(max-width:767px){.pagina-hero{padding:56px 0 48px}.pagina-hero p{font-size:16px}}
+
+/* Navegación La Rueca — siete páginas */
+@media (min-width: 992px) and (max-width: 1199px) {
+ .navbar .nav-link {font-size: 13px;}
+ .navbar .btn-menu {padding: 9px 14px !important;}
+ .navbar .navbar-nav {gap: .35rem !important;}
+}
+@media (max-width: 991px) {
+ .navbar .navbar-nav {align-items: stretch !important; padding: 12px 0;}
+ .navbar .nav-link {padding: 11px 12px;}
 }
