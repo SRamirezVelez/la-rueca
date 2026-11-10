@@ -1,149 +1,578 @@
+
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Mira fotografías de talleres, bordados y encuentros creativos de La Rueca."><title>La Rueca | Galería</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/estilos.css?v=11"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></head><body><nav class="navbar navbar-expand-lg navbar-light sticky-top">
-<div class="container">
-<a class="navbar-brand" href="index.html">
-<img alt="La Rueca" class="logo" src="img/logo-la-rueca.png"/>
-</a>
-<button aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú" class="navbar-toggler" data-bs-target="#menuPrincipal" data-bs-toggle="collapse" type="button">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="menuPrincipal">
-<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-<li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-<li class="nav-item"><a class="nav-link" href="experiencia.html">La experiencia Rueca</a></li>
-<li class="nav-item"><a class="nav-link" href="talleres.html">Talleres</a></li>
-<li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li><li class="nav-item"><a aria-current="page" class="nav-link" href="galeria.html">Galería</a></li>
-<li class="nav-item"><a class="nav-link btn-menu" href="contacto.html">Contáctanos</a></li>
-</ul>
-</div>
-</div>
-</nav><main><section class="pagina-hero"><div class="container"><span class="etiqueta">NUESTROS MOMENTOS</span><h1>Historias entre hilos.</h1><p>Fotografías de piezas, encuentros y experiencias que hacen especial a La Rueca.</p></div></section><section class="seccion" id="galeria">
-<div class="container">
-<div class="encabezado-seccion text-center">
-<span class="etiqueta">MOMENTOS ESPECIALES</span>
-<h2 class="titulo-seccion">Nuestra galería</h2>
-<p>
-            Historias, puntadas y momentos que compartimos
-            en cada experiencia.
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =====================================
+       SEO Y DATOS DE LA PÁGINA
+  ====================================== -->
+
+  <title>La Rueca | Galería de bordados y experiencias</title>
+
+  <meta
+    name="description"
+    content="Descubre fotografías de talleres, bordados, creaciones textiles y encuentros creativos de La Rueca en Medellín."
+  >
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Tipografías -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Swiper: estilos del carrusel -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Estilos de La Rueca -->
+  <link href="css/estilos.css?v=12" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- =====================================
+       01. MENÚ DE NAVEGACIÓN
+  ====================================== -->
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+
+        <img
+          src="img/logo-la-rueca.png"
+          alt="La Rueca - Inicio"
+          class="logo"
+        >
+
+      </a>
+
+      <!-- Menú para celulares -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Enlaces principales -->
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">
+              Nosotros
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="experiencia.html">
+              La experiencia Rueca
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="talleres.html">
+              Talleres
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">
+              Productos
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="galeria.html"
+              aria-current="page"
+            >
+              Galería
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn-menu" href="contacto.html">
+              Contáctanos
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <main>
+
+    <!-- =====================================
+         02. PORTADA DE GALERÍA
+    ====================================== -->
+
+    <section class="pagina-hero">
+
+      <div class="container">
+
+        <span class="etiqueta">
+          NUESTROS MOMENTOS
+        </span>
+
+        <h1>
+          Historias entre hilos.
+        </h1>
+
+        <p>
+          Fotografías de piezas, encuentros y experiencias
+          que hacen especial a La Rueca.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         03. GALERÍA DE FOTOGRAFÍAS
+    ====================================== -->
+
+    <section class="seccion" id="galeria">
+
+      <div class="container">
+
+        <!-- Encabezado -->
+        <div class="encabezado-seccion text-center">
+
+          <span class="etiqueta">
+            MOMENTOS ESPECIALES
+          </span>
+
+          <h2 class="titulo-seccion">
+            Nuestra galería
+          </h2>
+
+          <p>
+            Historias, puntadas y momentos que
+            compartimos en cada experiencia.
           </p>
-</div>
-<!-- GALERÍA PREMIUM LA RUECA -->
-<div class="galeria-premium">
-<div aria-label="Galería de fotografías de La Rueca" class="swiper galeria-swiper">
-<div class="swiper-wrapper">
-<!-- IMAGEN 1 -->
-<div class="swiper-slide">
-<img alt="Experiencia creativa en La Rueca" loading="lazy" src="img/galeria-1.png"/>
-</div>
-<!-- IMAGEN 2 -->
-<div class="swiper-slide">
-<img alt="Taller de bordado y aprendizaje" loading="lazy" src="img/galeria-2.png"/>
-</div>
-<!-- IMAGEN 3 -->
-<div class="swiper-slide">
-<img alt="Creaciones artesanales de La Rueca" loading="lazy" src="img/galeria-3.png"/>
-</div>
-<!-- IMAGEN 4 -->
-<div class="swiper-slide">
-<img alt="Materiales y técnicas de bordado" loading="lazy" src="img/galeria-4.png"/>
-</div>
-<!-- IMAGEN 5 -->
-<div class="swiper-slide">
-<img alt="Momentos especiales de nuestros talleres" loading="lazy" src="img/galeria-5.png"/>
-</div>
-<!-- IMAGEN 6 -->
-<div class="swiper-slide">
-<img alt="Bordados hechos a mano" loading="lazy" src="img/galeria-6.png"/>
-</div>
-<!-- IMAGEN 7 -->
-<div class="swiper-slide">
-<img alt="Diseños de bordado artesanal" loading="lazy" src="img/galeria-7.png"/>
-</div>
-<!-- IMAGEN 8 -->
-<div class="swiper-slide">
-<img alt="Arte y creatividad con hilos" loading="lazy" src="img/galeria-8.png"/>
-</div>
-<!-- IMAGEN 9 -->
-<div class="swiper-slide">
-<img alt="Detalles de nuestras creaciones" loading="lazy" src="img/galeria-9.png"/>
-</div>
-<!-- IMAGEN 10 -->
-<div class="swiper-slide">
-<img alt="Espacios para compartir y crear" loading="lazy" src="img/galeria-10.png"/>
-</div>
-</div>
-</div>
-<div class="galeria-controles">
-<button aria-label="Fotografía anterior" class="galeria-anterior" type="button">←</button>
-<div class="galeria-paginacion"></div>
-<button aria-label="Fotografía siguiente" class="galeria-siguiente" type="button">→</button>
-</div>
-</div>
-</div>
-</section></main><footer class="pie-pagina">
-<div class="container">
-<div class="row g-4 align-items-start">
-<div class="col-md-5">
-<h3>La Rueca</h3>
-<p>El futuro es hecho a mano.</p>
-<p>Un espacio para crear, compartir y conectar.</p>
-</div>
-<div class="col-md-4">
-<h4>Explora</h4>
-<a href="nosotros.html">Nosotros</a>
-<a href="experiencia.html">La experiencia Rueca</a>
-<a href="talleres.html">Talleres</a>
-<a href="productos.html">Productos</a>
-<a href="galeria.html">Galería</a>
-<a href="contacto.html">Contacto</a>
-</div>
-<div class="col-md-3">
-<h4>Contáctanos</h4>
-<p>Medellín, Colombia</p>
-<a href="https://www.instagram.com/larueca.creaciones/" rel="noopener noreferrer" target="_blank">Instagram</a>
-</div>
-</div>
-<div class="footer-inferior">
+
+        </div>
+
+
+        <!-- =================================
+             CARRUSEL PREMIUM SWIPER
+        ================================== -->
+
+        <div class="galeria-premium">
+
+          <div
+            class="swiper galeria-swiper"
+            aria-label="Galería de fotografías de La Rueca"
+            role="region"
+          >
+
+            <div class="swiper-wrapper">
+
+              <!-- =================================
+                   IMAGEN 01
+                   Archivo: galeria-1.png
+              ================================== -->
+
+              <div class="swiper-slide">
+
+                <img
+                  src="img/galeria-1.png"
+                  alt="Experiencia creativa en La Rueca"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <!-- =================================
+                   IMAGEN 02
+                   Archivo: galeria-2.png
+              ================================== -->
+
+              <div class="swiper-slide">
+
+                <img
+                  src="img/galeria-2.png"
+                  alt="Taller de bordado y aprendizaje"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <!-- =================================
+                   IMAGEN 03
+                   Archivo: galeria-3.png
+              ================================== -->
+
+              <div class="swiper-slide">
+
+                <img
+                  src="img/galeria-3.png"
+                  alt="Creaciones artesanales de La Rueca"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <!-- =================================
+                   IMAGEN 04
+                   Archivo: galeria-4.png
+              ================================== -->
+
+              <div class="swiper-slide">
+
+                <img
+                  src="img/galeria-4.png"
+                  alt="Materiales y técnicas de bordado"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <!-- =================================
+                   IMAGEN 05
+                   Archivo: galeria-5.png
+              ================================== -->
+
+              <div class="swiper-slide">
+
+                <img
+                  src="img/galeria-5.png"
+                  alt="Momentos especiales de nuestros talleres"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <!-- =================================
+                   IMAGEN 06
+                   Archivo: galeria-6.png
+              ================================== -->
+
+              <div class="swiper-slide">
+
+                <img
+                  src="img/galeria-6.png"
+                  alt="Bordados hechos a mano"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <!-- =================================
+                   IMAGEN 07
+                   Archivo: galeria-7.png
+              ================================== -->
+
+              <div class="swiper-slide">
+
+                <img
+                  src="img/galeria-7.png"
+                  alt="Diseños de bordado artesanal"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <!-- =================================
+                   IMAGEN 08
+                   Archivo: galeria-8.png
+              ================================== -->
+
+              <div class="swiper-slide">
+
+                <img
+                  src="img/galeria-8.png"
+                  alt="Arte y creatividad con hilos"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <!-- =================================
+                   IMAGEN 09
+                   Archivo: galeria-9.png
+              ================================== -->
+
+              <div class="swiper-slide">
+
+                <img
+                  src="img/galeria-9.png"
+                  alt="Detalles de nuestras creaciones"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <!-- =================================
+                   IMAGEN 10
+                   Archivo: galeria-10.png
+              ================================== -->
+
+              <div class="swiper-slide">
+
+                <img
+                  src="img/galeria-10.png"
+                  alt="Espacios para compartir y crear"
+                  loading="lazy"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- =================================
+               CONTROLES DEL CARRUSEL
+          ================================== -->
+
+          <div class="galeria-controles">
+
+            <!-- Fotografía anterior -->
+            <button
+              class="galeria-anterior"
+              type="button"
+              aria-label="Ver fotografía anterior"
+            >
+              ←
+            </button>
+
+            <!-- Indicadores -->
+            <div class="galeria-paginacion"></div>
+
+            <!-- Fotografía siguiente -->
+            <button
+              class="galeria-siguiente"
+              type="button"
+              aria-label="Ver fotografía siguiente"
+            >
+              →
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================
+       04. PIE DE PÁGINA
+  ====================================== -->
+
+  <footer class="pie-pagina">
+
+    <div class="container">
+
+      <div class="row g-4 align-items-start">
+
+        <!-- Marca -->
+        <div class="col-md-5">
+
+          <h3>La Rueca</h3>
+
+          <p>El futuro es hecho a mano.</p>
+
+          <p>
+            Un espacio para crear,
+            compartir y conectar.
+          </p>
+
+        </div>
+
+        <!-- Navegación -->
+        <div class="col-md-4">
+
+          <h4>Explora</h4>
+
+          <a href="nosotros.html">Nosotros</a>
+
+          <a href="experiencia.html">
+            La experiencia Rueca
+          </a>
+
+          <a href="talleres.html">Talleres</a>
+
+          <a href="productos.html">Productos</a>
+
+          <a href="galeria.html">Galería</a>
+
+          <a href="contacto.html">Contacto</a>
+
+        </div>
+
+        <!-- Contacto -->
+        <div class="col-md-3">
+
+          <h4>Contáctanos</h4>
+
+          <p>Medellín, Colombia</p>
+
+          <a
+            href="https://www.instagram.com/larueca.creaciones/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Derechos -->
+      <div class="footer-inferior">
         © 2026 La Rueca — Todos los derechos reservados.
       </div>
-</div>
-</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================
+       05. JAVASCRIPT
+  ====================================== -->
+
+  <!-- Bootstrap: menú móvil -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Funciones generales de La Rueca -->
+  <script src="js/main.js"></script>
+
+  <!-- Swiper: biblioteca del carrusel -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <!-- =====================================
+       06. CONFIGURACIÓN DEL CARRUSEL
+  ====================================== -->
+
+  <script>
     document.addEventListener("DOMContentLoaded", function () {
+
+      // Verifica que Swiper se haya cargado.
       if (typeof Swiper === "undefined") {
-        console.error("Swiper no se cargó. Revisa la conexión a internet.");
+        console.error(
+          "Swiper no se cargó. Revisa la conexión a internet."
+        );
         return;
       }
 
-      const reducido = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      // Respeta la preferencia de movimiento reducido.
+      const movimientoReducido = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      // Inicializa el carrusel premium.
       new Swiper(".galeria-swiper", {
+
         loop: true,
+
         centeredSlides: true,
+
         slidesPerView: 1.18,
+
         spaceBetween: 12,
-        speed: reducido ? 0 : 650,
+
+        speed: movimientoReducido ? 0 : 650,
+
         grabCursor: true,
-        autoplay: reducido ? false : {
-          delay: 4500,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true
-        },
+
+        // Movimiento automático.
+        autoplay: movimientoReducido
+          ? false
+          : {
+              delay: 4500,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true
+            },
+
+        // Flechas.
         navigation: {
           prevEl: ".galeria-anterior",
           nextEl: ".galeria-siguiente"
         },
+
+        // Indicadores inferiores.
         pagination: {
           el: ".galeria-paginacion",
           clickable: true
         },
+
+        // Navegación con teclado.
         keyboard: {
           enabled: true,
           onlyInViewport: true
         },
+
+        // Ajustes para distintos tamaños de pantalla.
         breakpoints: {
-          576: { slidesPerView: 1.35, spaceBetween: 18 },
-          768: { slidesPerView: 1.55, spaceBetween: 22 },
-          1100: { slidesPerView: 1.85, spaceBetween: 26 }
+
+          576: {
+            slidesPerView: 1.35,
+            spaceBetween: 18
+          },
+
+          768: {
+            slidesPerView: 1.55,
+            spaceBetween: 22
+          },
+
+          1100: {
+            slidesPerView: 1.85,
+            spaceBetween: 26
+          }
+
         }
+
       });
+
     });
-  </script></body></html>
+  </script>
+
+</body>
+</html>
