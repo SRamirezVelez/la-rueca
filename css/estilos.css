@@ -1512,3 +1512,120 @@ body {
   }
 
 }
+
+
+/* =====================================
+   INFORMACIÓN ADICIONAL DE TALLERES
+====================================== */
+
+.evento-informacion {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #6d5b53;
+}
+
+.evento-informacion summary {
+  color: #b01818;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.evento-informacion summary:hover {
+  color: #8f1d2c;
+  text-decoration: underline;
+}
+
+.evento-informacion ul {
+  padding-left: 22px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.evento-informacion li {
+  margin-bottom: 5px;
+}
+
+.evento-informacion p {
+  margin-top: 8px;
+}
+
+
+/* ============================================
+   LA RUECA — MEJORAS EN TARJETAS DE EVENTOS
+============================================ */
+
+/* Fotografías verticales sin recortes */
+
+.evento-imagen-vertical {
+  width: 170px;
+  height: 190px;
+  object-fit: contain;
+  object-position: center;
+  background: #fffaf3;
+  border-radius: 15px;
+}
+
+/* Enlace externo con más información */
+
+.evento-enlace-info {
+  display: inline-block;
+  margin-top: 12px;
+  color: #b01818;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.evento-enlace-info:hover {
+  color: #8f1d2c;
+  text-decoration: underline;
+}
+
+/* Ajustes para tabletas */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .evento-imagen-vertical {
+    width: 140px;
+    height: 180px;
+  }
+
+}
+
+/* Ajustes para celulares */
+
+@media (max-width: 767px) {
+
+  .evento-imagen-vertical {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+  }
+
+}
+
+
+/* ============================================
+   LA RUECA — BOTÓN CONTÁCTANOS
+   Corrección del color al estar activo
+============================================ */
+
+/* Botón normal y página activa */
+.navbar .btn-menu,
+.navbar .btn-menu[aria-current="page"] {
+  background-color: #b01818;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Al pasar el mouse o hacer clic */
+.navbar .btn-menu:hover,
+.navbar .btn-menu:focus,
+.navbar .btn-menu:active,
+.navbar .btn-menu[aria-current="page"]:hover,
+.navbar .btn-menu[aria-current="page"]:focus {
+  background-color: #747343;
+  color: #ffffff;
+  text-decoration: none;
+}

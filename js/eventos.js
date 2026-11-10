@@ -34,22 +34,40 @@ function crearEnlaceWhatsApp(mensaje) {
 // Agrega aquí los próximos talleres confirmados.
 // La fecha siempre debe tener formato AAAA-MM-DD.
 
+
 const eventos = [
-
-  /*
-  EJEMPLO DE ESTRUCTURA (NO ES UN EVENTO REAL):
-
   {
-    nombre: "Bordado para principiantes",
-    fecha: "2027-02-20",
-    hora: "10:00 a. m.",
-    lugar: "Medellín",
-    imagen: "img/galeria-1.png",
-    cupos: "Consultar disponibilidad"
-  },
+    nombre: "Imágenes para habitar la memoria",
+    descripcion: "Taller de fotobordado para hacer de tus memorias un objeto presente. No necesitas experiencia previa.",
 
-  */
+    fecha: "2026-11-14",
+    hora: "3:00 p. m.",
+    lugar: "El Zagúan Café",
 
+    imagen: "img/fotobordado-memoria-1.png",
+
+    imagen: "img/fotobordado-memoria-1.png",
+    imagenVertical: true,
+    enlaceInfo: "https://sites.google.com/view/bettilustra/experiencias/taller-de-fotobordado",
+
+    cupos: "Consultar disponibilidad",
+    precio: "$65.000 COP",
+    reserva: "50% del aporte",
+    materiales: "Todos los materiales incluidos",
+
+    kit: [
+      "1 fotografía impresa",
+      "2 hojas de soporte patronaje",
+      "2 agujas #3",
+      "1 tijeras pulidoras",
+      "4 madejas",
+      "1 enhebrador",
+      "Cartilla digital de obsequio"
+    ],
+
+    incluyeCafe: true,
+    descuento: "Cupón de descuento para estudiantes CESDE"
+  }
 ];
 
 
@@ -272,6 +290,12 @@ function mostrarEventos() {
     );
 
     imagen.src = evento.imagen || "img/galeria-1.png";
+
+    // Fotografía vertical: mostrarla sin recortar.
+    if (evento.imagenVertical) {
+  imagen.classList.add("evento-imagen-vertical");
+    }
+
     imagen.alt = evento.nombre || "Taller de La Rueca";
     imagen.loading = "lazy";
 
@@ -335,6 +359,105 @@ function mostrarEventos() {
       boton.rel = "noopener noreferrer";
 
     }
+
+
+// ============================================
+// INFORMACIÓN ADICIONAL DEL TALLER
+// ============================================
+
+if (evento.descripcion) {
+  detalles.append(
+    crearElemento("p", "", evento.descripcion)
+  );
+}
+
+if (evento.precio) {
+  detalles.append(
+    crearElemento("p", "", `Aporte: ${evento.precio}`)
+  );
+}
+
+if (evento.kit || evento.reserva || evento.descuento) {
+
+  const informacion = crearElemento(
+    "details",
+    "evento-informacion"
+  );
+
+  const enlace = crearElemento(
+    "summary",
+    "",
+    "Ver más información del taller"
+  );
+
+  informacion.append(enlace);
+
+  if (evento.kit?.length) {
+
+    informacion.append(
+      crearElemento("p", "", "Kit incluido:")
+    );
+
+    const lista = crearElemento("ul");
+
+    evento.kit.forEach((material) => {
+      lista.append(
+        crearElemento("li", "", material)
+      );
+    });
+
+    informacion.append(lista);
+  }
+
+  if (evento.reserva) {
+    informacion.append(
+      crearElemento(
+        "p",
+        "",
+        `Reserva: ${evento.reserva}`
+      )
+    );
+  }
+
+  if (evento.incluyeCafe) {
+    informacion.append(
+      crearElemento(
+        "p",
+        "",
+        "¡El cafecito lo invitamos nosotras!"
+      )
+    );
+  }
+
+  if (evento.descuento) {
+    informacion.append(
+      crearElemento("p", "", evento.descuento)
+    );
+  }
+
+  detalles.append(informacion);
+}
+
+
+// ============================================
+// ENLACE EXTERNO CON MÁS INFORMACIÓN
+// ============================================
+
+if (evento.enlaceInfo) {
+
+  const enlaceInfo = crearElemento(
+    "a",
+    "evento-enlace-info",
+    "Conoce todos los detalles ↗"
+  );
+
+  enlaceInfo.href = evento.enlaceInfo;
+  enlaceInfo.target = "_blank";
+  enlaceInfo.rel = "noopener noreferrer";
+
+  detalles.append(enlaceInfo);
+
+}
 
     tarjeta.append(
       cajaFecha,
